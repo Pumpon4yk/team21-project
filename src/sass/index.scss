@@ -1,6 +1,9 @@
 @import './common';
+@import "./variables";
+@import "./vh";
+@import "./normalize";
+@import "./general-styles";
 @import "./btn";
-
 
 @import "./header";
 @import "./hero";
@@ -12,4 +15,8 @@
 @import "./contacts";
 @import "./footer";
 
-@import "./modal";
+@import "./modal/modal-bay-now";
+@import "./modal/modal-products";
+@import "./modal/modal-how-its";
+@import "./modal/modal-our-locations ";
+@import "./modal/modal-franchise";

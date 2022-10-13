@@ -1,0 +1,62 @@
+body {
+    background-image: url(../../src/images/bg-body/ice-bg-tel.png);
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../../src/images/bg-body/ice-bg-tel@2x.png');
+    }
+
+    font-family: $font-main;
+    color: $black-font-cl;
+    font-size: $font-size-main;
+    letter-spacing: $let-spacing-main;
+
+    @media screen and (min-width: 481px) {
+        background-image: url(../../src/images/bg-body/ice-bg-tab.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../../src/images/bg-body/ice-bg-tab@2x.png');
+        }
+    }
+    
+    @media screen and (min-width: 769px) {
+        background-image: url(../../src/images/bg-body/ice-bg.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../../src/images/bg-body/ice-bg@2x.png');
+        }
+    }
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        padding: 0 16px;
+    }
+}
+
+
+button {
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    font-family: $font-main;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 34px;
+}
