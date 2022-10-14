@@ -37,13 +37,14 @@
 
         @media screen and (min-width: 768px) {
             left: 12px;
-            top: -183px;
+            top: -120px;
         }
-                @media screen and (min-width: 1200px) {
-                    left: 34px;
-                    width: 301px;
-                    height: 316px;
-                }
+        @media screen and (min-width: 1200px) {
+            left: 34px;
+            top: -183px;
+            width: 301px;
+            height: 316px;
+        }
     }
 
     &--yellow {
@@ -59,20 +60,22 @@
 
         @media screen and (min-width: 768px) {
             left: 12px;
-            top: -183px;
+            top: -120px;
         }
-                @media screen and (min-width: 1200px) {
-                    left: 34px;
-                    width: 301px;
-                    height: 316px;
-                }
+        @media screen and (min-width: 1200px) {
+            left: 34px;
+            top: -183px;
+            width: 301px;
+            height: 316px;
+        }
+
     }
 
     &--brown {
         position: absolute;
         left: 40px;
         top: -100px;
-        height: 200px;
+height: 200px;
         width: 200px;
         border-radius: 50%;
         background-color: $bg-brown-ice-card;
@@ -81,16 +84,32 @@
 
         @media screen and (min-width: 768px) {
             left: 12px;
-            top: -183px;
+            top: -120px;
         }
 
         @media screen and (min-width: 1200px) {
             left: 34px;
+            top: -183px;
             width: 301px;
             height: 316px;
         }
+
+                .products__thumb {
+                    padding-bottom: 90px;
+                }
     }
 }  
+
+.products__thumb {
+    padding-bottom: 90px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 66px;
+    }
+}
    
 
 .products__item {
@@ -102,7 +121,6 @@
             padding: 123px 40px 20px 40px;
         
             width: 280px;
-            height: 420px;
             border-radius: 24px;
         
             text-align: center;
@@ -110,6 +128,7 @@
 
             &:nth-child(2) {
                 background-color: $bg-yellow-ice-card;
+
             }
             &:nth-child(3) {
                 background-color: $bg-brown-ice-card;
@@ -122,13 +141,12 @@
             @media screen and (min-width: 768px) {
                 padding: 108px 26px 0;
                 width: 224px;
-                height: 428px;
-                padding: 108px 40px 20px 40px;
+                padding: 108px 26px 20px 26px;
+                margin-bottom: 0;
             }
             @media screen and (min-width: 1200px) {
                 width: 370px;
                 margin-top: 303px;
-                height: 718px;
                 padding: 165px 40px 20px 40px;
             }
 }
@@ -196,7 +214,12 @@
 }
 
 .products__btn {
-    margin-top: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    display: block;
+    margin: 0 auto;
     background-color: transparent;
     border: transparent;
 }
