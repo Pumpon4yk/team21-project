@@ -1,0 +1,82 @@
+<header class="header">
+    <div class="container header__container">
+
+            <svg class="header-logo">
+                <use href="./images/sprite.svg#logo"></use>
+            </svg>
+
+ 
+            <button class="menu-button js-open-menu"  aria-expanded="false" aria-controls="mobile-menu" type="button">
+            <svg class="icon-menu" width="20px" height="12px">
+            <use href="./images/sprite.svg#burger-open"></use>                      
+            </svg>
+            </button>
+
+            <nav class="nav__group">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="">Home</a>
+
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="">How it’s made?</a>
+
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="">Our products</a>
+
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="">Contact</a>
+
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="button" type="button">
+            <span class="text-button" data-modal-open>Buy now</span>
+            <span width="5px" height="8px">&#8250</span> 
+
+            <!-- <svg class="header-icon" with="12px" height="12px">
+                <use href=".images/sprite.svg#frame-header"></use>
+            </svg> -->
+            
+          </button>
+
+
+    </div>
+  
+</header>
+
+<!-- Mobile menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        
+        <svg class="header-logo">
+        <use href="./images/sprite.svg#logo"></use>
+        </svg>
+
+        <button class="menu-button menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="icon-menu" width="32px" height="32px">
+            <use href="./images/sprite.svg#burger-close"></use>
+          </svg>
+        </button>
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Home</a>
+
+                    </li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="">How it’s made?</a>
+
+                    </li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Our products</a>
+
+                    </li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Contact</a>
+          </div>
+
+
+
+<script src="./js/header-scroll.js"></script>
+ <!-- script mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
