@@ -1,8 +1,23 @@
+.container {
+    @media screen and (min-width:1200px) {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    }
+
 .header__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #84A178;
+    margin: auto;
+@media screen and (max-width:767px) {
+    padding-top: 12px;
+}
 
+    @media screen and (min-width:768px) { 
+        padding-top: 24px;
+    }
 }
 
 .header-logo  {
@@ -11,6 +26,7 @@
     @media screen and (min-width:320px) {
         width: 40px;
         height: 37px;
+        margin-right: auto;
     }
 
     @media screen and (min-width:768px) {
@@ -28,10 +44,14 @@
 
 .menu-button {
     padding: 0;
-    @media screen and (min-width:768px), (max-width:1199px) {
+    @media screen and (min-width:320px) {
+        margin-top: 0;
+    }
+        @media screen and (min-width:768px), (max-width:1199px) {
         display: flex;
-        margin-left: auto;
-        margin-right: 32px;
+        // margin-left: auto;
+        // margin-right: 32px;
+        // margin-top: 15px;
          }
 
     @media screen and (min-width:1200px) {
@@ -80,14 +100,30 @@ gap: 27px;
     background-color: #F8D24E;
     width: 152px;
     height: 42px;
+    text-align: center;
+    display: inline-flex;
+        align-items: center;
+        align-items: center;
+        margin: 0;
+        gap: 11px;
+        cursor: pointer;
 
-}
+        @media screen and (min-width:768px) {
+            margin-left: 32px;
+        }
+    }
 
 .text-button {
     color: #131313;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
+}
+
+.header-icon {
+ width: 12px;
+ height: 12px;
+ padding-top: 5px;
 }
 
 
