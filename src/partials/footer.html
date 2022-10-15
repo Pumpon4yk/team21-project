@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <include src="./partials/header.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/customer-reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/footer.html"></include>
+    <!-- Modal windows -->
+    <include src="./partials/modal/modal-bay-now.html"></include>
+    <include src="./partials/modal/modal-products.html"></include>
+    <include src="./partials/modal/modal-how-its.html"></include>
+    <include src="./partials/modal/modal-our-locations.html"></include>
+    <include src="./partials/modal/modal-franchise.html"></include>
+    <footer>
+      <div class="footer container">
+        <div class="footer__title">
+          <p class="footer__title--text">homemade ice cream made</p>
+          <p class="footer__title--upper">with passion</p>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer-socials">
+            <ul class="footer-socials__list">
+              <li class="footer-socials__item">
+                <a
+                  class="footer-socials__link"
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="icon"
+                >
+                  <svg class="footer-socials__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#git"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials__item">
+                <a
+                  class="footer-socials__link"
+                  href="https://web.telegram.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="icon"
+                >
+                  <svg class="footer-socials__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials__item">
+                <a
+                  class="footer-socials__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="icon"
+                >
+                  <svg class="footer-socials__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-tel">
+            <ul class="footer-tel__list list">
+              <li class="footer-tel__item">
+                <p class="footer-tel__txt">Feel free to contact</p>
+              </li>
+              <li class="footer-tel__item">
+                <a class="footer-tel__link" href="tel:+61(0)383766284">
+                  +61 (0) 383 766 284</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p class="footer-copyright__txt">
+            © 2022 - IceCream. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
