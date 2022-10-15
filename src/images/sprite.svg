@@ -12,7 +12,7 @@
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M2.286 16h45.714"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M2.286 29.714h45.714"></path>
 </symbol>
-<symbol id="frame-header" viewBox="0 0 32 32">
+<symbol id="frame" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M10.667 5.333l13.2 10.667-13.2 10.667"></path>
 </symbol>
 

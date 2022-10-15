@@ -1,3 +1,10 @@
+.container {
+    @media screen and (min-width:481px), (max-width:767px) {
+        width: 100%;
+        margin: 0;
+    }
+}
+
 .menu-container {
     position: fixed;
     top: 0;
@@ -43,6 +50,8 @@
     align-items: center;
     text-align: center;
     color: #FCFCFC;
+    margin-top: 48px;
+    margin-bottom: 111px;
   
 }
 
@@ -56,13 +65,13 @@
 .mobile-menu__link {
     color: #FCFCFC;
 
-    @media screen and (max-width:767px) {
+    @media screen and (min-width:320px) {
         font-weight: 700;
         font-size: 32px;
         line-height: 1.21;
     }
 
-    @media screen and (min-width:768), (max-width:1199px) {
+    @media screen and (min-width:768) {
         font-weight: 700;
         font-size: 48px;
         line-height: 1.23;
@@ -74,3 +83,15 @@
         color: #131313;
     }
     }
+
+    .icon-menu {
+        background-color: #84A178;
+   }
+
+   .menu-btn {
+    background-color: #F8D24E;
+    width: 152px;
+    height: 42px;
+    margin: 0 auto;
+   }
+ 

@@ -1,7 +1,6 @@
 .header__container {
     display: flex;
     align-items: center;
-    width: 100%;
     background-color: #84A178;
 
 }
@@ -9,14 +8,12 @@
 .header-logo  {
     fill:#F8D24E;
 
-    @media screen and (max-width:767px) {
-        // padding-top: 12px;
-        // padding-left: 22px;
+    @media screen and (min-width:320px) {
         width: 40px;
         height: 37px;
     }
 
-    @media screen and (min-width:768px), (max-width:1199px) {
+    @media screen and (min-width:768px) {
         width: 48px;
         height: 44px;
     }
@@ -81,6 +78,8 @@ gap: 27px;
         display: none;
     }
     background-color: #F8D24E;
+    width: 152px;
+    height: 42px;
 
 }
 
