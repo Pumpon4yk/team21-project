@@ -135,22 +135,32 @@
   margin-right: 4px;
 }
 .footer-tel__txt {
+  @media screen and (max-width: 1199.98px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 767.98px) {
+    font-size: 12px;
+  }
   font-family: $font-main;
   font-style: normal;
   font-weight: 700;
-  font-size: $font-size-main;
+  font-size: 16px;
   line-height: 186%;
-  /* identical to box height, or 26px */
-
   text-align: right;
-
   color: #131313;
+  /* identical to box height, or 26px */
 }
 .footer-tel__link {
+  @media screen and (max-width: 1199.98px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 767.98px) {
+    font-size: 12px;
+  }
   font-family: $font-main;
   font-style: normal;
   font-weight: 700;
-  font-size: $font-size-main;
+  font-size: 16px;
   line-height: 186%;
   /* identical to box height, or 26px */
 

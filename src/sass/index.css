@@ -267,22 +267,42 @@ button {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 186%;
-  /* identical to box height, or 26px */
   text-align: right;
   color: #131313;
+  /* identical to box height, or 26px */
+}
+@media screen and (max-width: 1199.98px) {
+  .footer-tel__txt {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .footer-tel__txt {
+    font-size: 12px;
+  }
 }
 
 .footer-tel__link {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 186%;
   /* identical to box height, or 26px */
   text-align: right;
   color: #FCFCFC;
+}
+@media screen and (max-width: 1199.98px) {
+  .footer-tel__link {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .footer-tel__link {
+    font-size: 12px;
+  }
 }
 
 .footer-copyright {
