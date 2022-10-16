@@ -1,5 +1,5 @@
 .footer {
-  background-color: #84a178;
+  background-color: $bg-green;
 }
 .footer__contacts-group {
   @media screen and (min-width: 768px) {
@@ -19,42 +19,42 @@
 }
 .footer__title--text {
   @media screen and (min-width: 1200px) {
-    font-family: 'Montserrat';
+    font-family: $font-main;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 37px;
     /* identical to box height */
-    letter-spacing: 0.04em;
+    letter-spacing: $let-spacing-main;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: $bg-white-cl;
   }
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     width: 352px;
     height: 57px;
     margin-bottom: 9px;
-    font-family: 'Montserrat';
+    font-family: $font-main;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 32px;
-    letter-spacing: 0.04em;
+    letter-spacing: $let-spacing-main;
     text-transform: uppercase;
 
-    color: #fcfcfc;
+    color: $bg-white-cl;
   }
-  font-family: 'Montserrat';
+  font-family: $font-main;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: $bg-white-cl;
   margin-bottom: 16px;
 }
 .footer__title--upper {
   @media screen and (min-width: 1200px) {
-    font-family: 'Montserrat';
+    font-family: $font-main;
     font-style: normal;
     font-weight: 700;
     font-size: 58px;
@@ -62,27 +62,27 @@
     /* identical to box height */
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: $bg-white-cl;
   }
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     width: 340px;
-    font-family: 'Montserrat';
+    font-family: $font-main;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 59px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: $bg-white-cl;
   }
-  font-family: 'Montserrat';
+  font-family: $font-main;
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
   line-height: 41px;
-  letter-spacing: 0.04em;
+  letter-spacing: $let-spacing-main;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: $bg-white-cl;
 }
 // .footer__contacts {
 // }
@@ -103,18 +103,18 @@
 .footer-socials__link {
   width: 34px;
   height: 34px;
-  background-color: #f8d24e;
-  color: #84a178;
+  background-color: $accent-font-cl;
+  color: $bg-green;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   &:hover {
-    color: #fcfcfc;
+    color: $bg-white-cl;
   }
   &:focus {
-    color: #fcfcfc;
+    color: $bg-white-cl;
     width: 36px;
   }
 }
@@ -135,10 +135,10 @@
   margin-right: 4px;
 }
 .footer-tel__txt {
-  font-family: 'Montserrat';
+  font-family: $font-main;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: $font-size-main;
   line-height: 186%;
   /* identical to box height, or 26px */
 
@@ -147,16 +147,16 @@
   color: #131313;
 }
 .footer-tel__link {
-  font-family: 'Montserrat';
+  font-family: $font-main;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: $font-size-main;
   line-height: 186%;
   /* identical to box height, or 26px */
 
   text-align: right;
 
-  color: #fcfcfc;
+  color: $bg-white-cl;
 }
 .footer-copyright {
   text-align: center;
@@ -166,14 +166,14 @@
   padding: 16px 20px 3px;
 }
 .footer-copyright__txt {
-  font-family: 'Montserrat';
+  font-family: $font-main;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: $font-size-main;
   line-height: 186%;
   /* identical to box height, or 26px */
 
   letter-spacing: 0.02em;
 
-  color: #7a7a7a;
+  color: $cl-font-gray-second;
 }

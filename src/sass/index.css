@@ -113,7 +113,7 @@ button {
 }
 
 .footer {
-  background-color: #84a178;
+  background-color: #84A178;
 }
 
 @media screen and (min-width: 768px) {
@@ -135,18 +135,18 @@ button {
 }
 
 .footer__title--text {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: #FCFCFC;
   margin-bottom: 16px;
 }
 @media screen and (min-width: 1200px) {
   .footer__title--text {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -154,7 +154,7 @@ button {
     /* identical to box height */
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: #FCFCFC;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -162,30 +162,30 @@ button {
     width: 352px;
     height: 57px;
     margin-bottom: 9px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 32px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: #FCFCFC;
   }
 }
 
 .footer__title--upper {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
   line-height: 41px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: #FCFCFC;
 }
 @media screen and (min-width: 1200px) {
   .footer__title--upper {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 58px;
@@ -193,20 +193,20 @@ button {
     /* identical to box height */
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: #FCFCFC;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer__title--upper {
     width: 340px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 59px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: #FCFCFC;
   }
 }
 
@@ -229,8 +229,8 @@ button {
 .footer-socials__link {
   width: 34px;
   height: 34px;
-  background-color: #f8d24e;
-  color: #84a178;
+  background-color: #F8D24E;
+  color: #84A178;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -238,10 +238,10 @@ button {
   display: flex;
 }
 .footer-socials__link:hover {
-  color: #fcfcfc;
+  color: #FCFCFC;
 }
 .footer-socials__link:focus {
-  color: #fcfcfc;
+  color: #FCFCFC;
   width: 36px;
 }
 
@@ -264,7 +264,7 @@ button {
 }
 
 .footer-tel__txt {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -275,14 +275,14 @@ button {
 }
 
 .footer-tel__link {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 186%;
   /* identical to box height, or 26px */
   text-align: right;
-  color: #fcfcfc;
+  color: #FCFCFC;
 }
 
 .footer-copyright {
@@ -294,12 +294,12 @@ button {
 }
 
 .footer-copyright__txt {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 186%;
   /* identical to box height, or 26px */
   letter-spacing: 0.02em;
-  color: #7a7a7a;
+  color: #7A7A7A;
 }/*# sourceMappingURL=index.css.map */
