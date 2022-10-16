@@ -1,17 +1,22 @@
-<section class="section products">
+<section class="products">
     <div class="container">
         <p class="title-second">
             100% natural
         </p>
-        <h2 class="section-title">
+        <h1 class="section-title">
             products
-        </h2>
-        <ul class="products__list list">
+        </h1>
+        <ul class="products__list">
             <li class="products__item">
                 <div class="products__thumb">
                     <div class="products__photo__thumb--green">
-                        <img class="products__photo" src="./images/products/img_m@1x.webp" alt="ice coffee" width="200"
-                            height="197">
+                        <img class="products__photo" srcset="
+                        ./images/products/img_m@1x.webp 200w,
+                        ./images/products/img_m@2x.webp 399w,
+                        ./images/products/img_lg@1x.webp 303w,
+                        ./images/products/img_lg@2x.webp 605w"
+                            sizes="(min-width: 1200px) 303px, (min-width: 480px) 200px"
+                            src="./images/products/img_m@1x.webp" alt="ice coffee">
                     </div>
                     <h3 class="products__title">
                         ice cream
@@ -20,17 +25,26 @@
                         Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
                     </p>
                 </div>
-                <button class="button products__btn" type="button">
-                    <svg width="40" height="15">
-                        <use href="./images/sprite.svg#arrow-def"></use>
+                <button class="products__btn" type="button">
+                    <svg class="products__icon" width="40" height="15">
+                        <use class="products__icon--def" href="/src/images/sprite.svg#arrow-def"></use>
+                    </svg>
+                    <svg class="products__icon--on-activ" width="50" height="15">
+                        <use class="products__icon--hover" href="/src/images/sprite.svg#arrow-hover"></use>
+                        <use class="products__icon--focus" href="/src/images/sprite.svg#arrow-focus"></use>
                     </svg>
                 </button>
             </li>
             <li class="products__item">
                 <div class="products__thumb">
                     <div class="products__photo__thumb--yellow">
-                        <img class="products__photo" src="./images/products/img2_m@1x.webp" alt="ice coffee" width="200"
-                            height="197">
+                        <img class="products__photo" srcset="
+                        ./images/products/img2_m@1x.webp 200w,
+                        ./images/products/img2_m@2x.webp 399w,
+                        ./images/products/img2_lg@1x.webp 303w,
+                        ./images/products/img2_lg@2x.webp 605w"
+                            sizes="(min-width: 1200px) 303px, (min-width: 480px) 200px"
+                            src="./images/products/img2_m@1x.webp" alt="ice coffee">
                     </div>
                     <h3 class="products__title">
                         ice coffee
@@ -41,17 +55,26 @@
                         and flavor enhancers
                     </p>
                 </div>
-                <button class="button products__btn" type="button">
-                    <svg width="40" height="15">
-                        <use href="/src/images/sprite.svg#arrow-def"></use>
+                <button class="products__btn" type="button">
+                    <svg class="products__icon" width="40" height="15">
+                        <use class="products__icon--def" href="/src/images/sprite.svg#arrow-def"></use>
+                    </svg>
+                    <svg class="products__icon--on-activ" width="50" height="15">
+                        <use class="products__icon--hover" href="/src/images/sprite.svg#arrow-hover"></use>
+                        <use class="products__icon--focus" href="/src/images/sprite.svg#arrow-focus"></use>
                     </svg>
                 </button>
             </li>
             <li class="products__item">
                 <div class="products__thumb">
                     <div class="products__photo__thumb--brown">
-                        <img class="products__photo" src="./images/products/img3_m@1x.webp" alt="ice coffee" width="200"
-                            height="197">
+                        <img class="products__photo" srcset="
+                        ./images/products/img3_m@1x.webp 200w,
+                        ./images/products/img3_m@2x.webp 399w,
+                        ./images/products/img3_lg@1x.webp 303w,
+                        ./images/products/img3_lg@2x.webp 605w"
+                            sizes="(min-width: 1200px) 303px, (min-width: 480px) 200px"
+                            src="./images/products/img3_m@1x.webp" alt="ice coffee">
                     </div>
                     <h3 class="products__title">
                         milkshakes
@@ -62,13 +85,16 @@
                         of your choice
                     </p>
                 </div>
-                <button class="button products__btn" type="button">
-                    <svg width="40" height="15">
-                        <use href="/src/images/sprite.svg#arrow-def"></use>
+                <button class="products__btn" type="button">
+                    <svg class="products__icon" width="40" height="15">
+                        <use class="products__icon--def" href="/src/images/sprite.svg#arrow-def"></use>
+                    </svg>
+                    <svg class="products__icon--on-activ" width="50" height="15">
+                        <use class="products__icon--hover" href="/src/images/sprite.svg#arrow-hover"></use>
+                        <use class="products__icon--focus" href="/src/images/sprite.svg#arrow-focus"></use>
                     </svg>
                 </button>
             </li>
         </ul>
-        </h1>
     </div>
 </section>

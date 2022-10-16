@@ -10,8 +10,12 @@
 .products__photo {
     position: absolute;
     left: 0;
-    bottom: 17px;
+    bottom: 11px;
     border-radius: 150px;
+
+    @media screen and (min-width: 1200px) {
+        bottom: 17px;
+    }
 }
 
 .products__list {
@@ -218,8 +222,37 @@ height: 200px;
     left: 50%;
     bottom: 0px;
     transform: translateX(-50%);
-    display: block;
     margin: 0 auto;
     background-color: transparent;
     border: transparent;
+}
+
+.products__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.products__icon--hover,
+.products__icon--focus {
+    opacity: 0;
+}
+
+.products__btn:hover .products__icon--def {
+    opacity: 0;
+}
+.products__btn:focus .products__icon--def {
+    opacity: 0;
+}
+
+.products__btn:hover .products__icon--hover {
+    opacity: 1;
+}
+.products__btn:focus .products__icon--hover {
+    opacity: 0;
+}
+
+.products__btn:focus .products__icon--focus {
+    opacity: 1;
 }
