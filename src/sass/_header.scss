@@ -1,4 +1,7 @@
 .container {
+@media screen and (min-width:481px) {
+    max-width:767px;
+}
     @media screen and (min-width:1200px) {
         margin: 0 auto;
         max-width: 1200px;
@@ -21,10 +24,13 @@
 }
 .logo {
     margin-right: auto;
+    outline: 0;
+        border: 0;
 }
 
 .header-logo  {
     fill:#F8D24E;
+    
 
     @media screen and (min-width:320px) {
         width: 40px;
@@ -52,10 +58,7 @@
     }
         @media screen and (min-width:768px), (max-width:1199px) {
         display: flex;
-        // margin-left: auto;
-        // margin-right: 32px;
-        // margin-top: 15px;
-         }
+    }
 
     @media screen and (min-width:1200px) {
         display: none;
@@ -88,15 +91,32 @@ gap: 27px;
     font-size: 16px;
     line-height: 1.25;
     color: #FCFCFC;
+    outline: 0;
 
-    &:hover,
-    &:focus {
+    @media screen and (min-width:320px) {
+        &:hover {
+                color: #F8D24E;
+            }
+        
+            &:focus {
+                color: #0A8817;
+            }
+        }
+
+    
+    @media screen and (min-width:1200px) {
+        
+    &:hover {
     color: #F8D24E;
     }
+    &:focus {
+    color: #0A8817;
+    }
+}
 
 }
 
-.button {
+.button-header {
     @media screen and (max-width:767px) {
         display: none;
     }
@@ -110,10 +130,31 @@ gap: 27px;
         margin: 0;
         gap: 11px;
         cursor: pointer;
+        outline: 0;
+        border: 0;
+        
+        
 
         @media screen and (min-width:768px) {
             margin-left: 32px;
         }
+
+        &:hover {
+            background-color: #0A8817;
+            color: #000000;
+        }
+
+        &:focus {
+            background-color: #0A8817;
+            color: #FCFCFC;
+        }
+
+        &:disabled {
+            background-color: #ABABAB;
+            color: #000000;
+
+        }
+
     }
 
 .text-button {

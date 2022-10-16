@@ -15,12 +15,8 @@
         transform: translateX(0);
     }
 
-    // @media screen and (max-width:479px) {
-    //     max-width: 100%;
-    // }
-
+   
     @media screen and (max-width:767px) {
-        // width: 100%;
         padding: 20px 23px;
     }
 
@@ -37,9 +33,13 @@
     top: 10px;
     right: 15px;
 }
-
+.menu-button {
+    outline: 0;
+        border: 0;
+}
 .menu-close
-{
+{ outline: 0;
+    border: 0;
     margin-top: 15px;
     @media screen and (min-width:768px) {
     margin-right: 30px;
@@ -71,6 +71,8 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 1.21;
+    outline: 0;
+        border: 0;
     
 
     @media screen and (min-width:768px) {
@@ -88,6 +90,7 @@
 
     .icon-menu {
         background-color: #84A178;
+      
    }
 
    .menu-btn {
@@ -96,7 +99,25 @@
     height: 42px;
     margin: 0 auto;
     margin-bottom: 63px;
+    outline: 0;
+    border: 0;
+
+    &:hover {
+            background-color: #0A8817;
+            color: #000000;
+        }
     
+        &:focus {
+            background-color: #0A8817;
+            color: #FCFCFC;
+        }
+    
+        &:disabled {
+            background-color: #ABABAB;
+            color: #000000;
+    
+        }
+      
 
     @media screen and (min-width:768px) {
         display: none;
