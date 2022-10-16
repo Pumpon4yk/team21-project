@@ -1,8 +1,3 @@
-.advantege {
-  background-color: $bg-green;
-  color: $white-font-cl;
-}
-
 .section {
   padding-bottom: 36px;
 
@@ -13,6 +8,11 @@
   @media screen and (min-width: 1200px) {
     padding-bottom: 86px;
   }
+}
+
+.advantege--container {
+  background-color: $bg-green;
+  color: $white-font-cl;
 }
 
 .advantege__list {
