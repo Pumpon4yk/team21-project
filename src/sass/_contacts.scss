@@ -1,0 +1,150 @@
+.container {
+  @media screen and (min-width: 320px) {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.contact {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 121px;
+  }
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.contact__list {
+  @media screen and (max-width: 767.98px) {
+    display: block;
+  }
+  justify-content: center;
+  gap: 32px;
+  display: flex;
+}
+.card {
+  text-align: left;
+  min-width: 280px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px 32px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.86;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+  @media screen and (min-width: 1200px) {
+    min-width: 368px;
+    padding: 40px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 224px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 20px;
+  }
+}
+.contact__name {
+  //   min-width: 73px;
+  //   height: 28px;
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  /* or 30px */
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $black-font-cl;
+  text-transform: uppercase;
+  background-color: $accent-font-cl;
+  border-color: $accent-font-cl;
+  border-radius: 24px;
+  padding: 4px 24px;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+// .card__item {
+//   &:nth-child(1) {
+//     @media screen and (max-width: 767.98px) {
+//       padding-top: 20px;
+//       padding-bottom: 24px;
+//     }
+//   }
+//   width: 179px;
+//   border-bottom: 1px solid #e1e1e1;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+// }
+.card__text {
+  padding-top: 8px;
+  color: #d6936d;
+  line-height: 1.5;
+  font-weight: 500;
+  line-height: 183%;
+  /* or 29px */
+  letter-spacing: 0.04em;
+  text-decoration-line: underline;
+}
+
+// .card__title {
+// }
+.card__time {
+  color: #ababab;
+  text-transform: uppercase;
+}
+.card__item {
+  width: 179px;
+  border-bottom: 1px solid rgba(225, 225, 225, 1);
+  transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  @media screen and (max-width: 767.98px) {
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 159px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 250px;
+    height: 191px;
+  }
+
+  &:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  &:nth-child(1) {
+    padding-top: 32px;
+    @media screen and (max-width: 767.98px) {
+      padding-top: 20px;
+    }
+  }
+}
+.card__link {
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+
+  line-height: 183%;
+  /* or 29px */
+  color: #131313;
+}
