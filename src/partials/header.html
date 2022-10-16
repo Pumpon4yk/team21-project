@@ -1,0 +1,90 @@
+<header class="header">
+    <div class="container header__container">
+            <a href="" class="logo">
+          
+            <svg  id="Home" class="header-logo" width="60px" height="65px" >
+                <use href="./images/sprite.svg#logo"></use>
+            </svg>
+            </a>
+
+ 
+            <button class="menu-button js-open-menu"  aria-expanded="false" aria-controls="mobile-menu" type="button">
+            <svg class="icon-menu" width="20px" height="12px">
+            <use href="./images/sprite.svg#burger-open"></use>                      
+            </svg>
+            </button>
+
+            <nav class="nav__group">
+                <ul class="nav__list">
+                    <li class="nav__item"><a id="Home" class="nav__link" href="">Home</a>
+
+                    </li>
+                    <li class="nav__item"><a id="Tradition and love" class="nav__link" href="">How it’s made?</a>
+
+                    </li>
+                    <li class="nav__item"><a id="Product" class="nav__link" href="">Our products</a>
+
+                    </li>
+                    <li class="nav__item"><a id="Contact" class="nav__link" href="">Contact</a>
+
+                    </li>
+                </ul>
+            </nav>
+<!--  Modal window -->
+            <button class="button-header" type="button">
+               <span class="text-button" data-modal-open>Buy now <svg class="header-icon" with="" height="">
+                <use href="./images/sprite.svg#arrow-btn"></use>
+            </svg></span>
+          
+            </button>
+    </div>
+</header>
+
+<!-- Mobile menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+  
+        <svg class="header-logo">
+        <use href="./images/sprite.svg#logo"></use>
+        </svg>
+
+        <button class="menu-button menu-close menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="icon-menu" width="32px" height="32px">
+            <use href="./images/sprite.svg#burger-close"></use>
+          </svg>
+        </button>
+        
+        
+
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a id="Home" class="mobile-menu__link" href="">Home</a>
+
+                    </li>
+                    <li class="mobile-menu__item"><a id="Tradition and love" class="mobile-menu__link" href="">How it’s made?</a>
+
+                    </li>
+                    <li class="mobile-menu__item"><a id="Product" class="mobile-menu__link" href="">Our products</a>
+
+                    </li>
+                    <li class="mobile-menu__item"><a id="Contact" class="mobile-menu__link" href="">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="menu-btn" type="button"width="152px" height="42px">
+                  <span class="text-button" data-modal-open>Buy now <svg class="header-icon" with="" height="">
+                <use href="./images/sprite.svg#arrow-btn"></use>
+                 </svg></span>             
+                </button>
+
+          </div>
+
+
+
+<script src="./js/header-scroll.js"></script>
+ <!-- script mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
