@@ -6,3 +6,4 @@
 |=========================>
 */
 import "./js/modal30"
+import "./js/reviews-slide"

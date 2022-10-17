@@ -2,7 +2,7 @@
   padding: 34px 39px;
   margin-bottom: 30px;
 
-  background: #84a178;
+  background-color: $bg-green;
   border-radius: 10px;
 
   @media screen and (min-width: 768px) {
@@ -22,7 +22,7 @@
 
   text-align: center;
 
-  color: #fcfcfc;
+  color: $white-font-cl;
 
   @media screen and (min-width: 768px) {
     font-weight: 500;
@@ -43,9 +43,11 @@
   font-size: 20px;
   line-height: calc(37 / 20);
 
+  padding-bottom: 32px;
+
   text-align: center;
 
-  color: #131313;
+  color: $black-font-cl;
 }
 .customer-reviews__img {
   display: block;
