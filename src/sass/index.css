@@ -583,6 +583,61 @@ button {
   color: #131313;
 }
 
+/*BUTTONS*/
+.button {
+  border-radius: 10px;
+  font-weight: 700;
+  min-width: 196px;
+  height: 42px;
+}
+
+.button-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 60px;
+}
+@media screen and (max-width: 767.98px) {
+  .button-thumb {
+    flex-direction: column;
+    margin-top: 16x;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-thumb {
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-thumb {
+    gap: 16px;
+  }
+}
+
+.contact-secondary-btn {
+  color: #131313;
+  background-color: #f8d24e;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.button-thumb__icon {
+  margin-left: 14px;
+  font-size: 20px;
+}
+
+.contact-primary-btn {
+  color: #131313;
+  background: #84a178;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .menu-container {
   position: fixed;
   top: 0;

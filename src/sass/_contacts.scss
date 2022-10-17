@@ -148,3 +148,54 @@
   /* or 29px */
   color: #131313;
 }
+/*BUTTONS*/
+.button {
+  border-radius: 10px;
+  font-weight: 700;
+  min-width: 196px;
+  height: 42px;
+}
+.button-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 60px;
+
+  @media screen and (max-width: 767.98px) {
+    flex-direction: column;
+    margin-top: 16x;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 16px;
+  }
+}
+.contact-secondary-btn {
+  color: #131313;
+  background-color: #f8d24e;
+  transition: color $animation, background-color $animation;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.button-thumb__icon {
+  margin-left: 14px;
+  font-size: 20px;
+}
+.contact-primary-btn {
+  color: #131313;
+  background: #84a178;
+  //   min-width: 161px;
+  //   height: 44px;
+  //   cursor: pointer;
+  //   border-color: #0000;
+  //   border-radius: 22px;
+  //   font-weight: 700;
+  transition: background-color $animation;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
