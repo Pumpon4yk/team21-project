@@ -138,8 +138,8 @@ gap: 27px;
     width: 152px;
     height: 42px;
     text-align: center;
-    display: inline-flex;
-        align-items: center;
+    display: flex;
+        justify-content: center;
         align-items: center;
         margin: 0;
         gap: 11px;
@@ -181,7 +181,7 @@ gap: 27px;
 .header-icon {
  width: 12px;
  height: 12px;
- padding-top: 5px;
+vertical-align: middle;
 }
 
 
