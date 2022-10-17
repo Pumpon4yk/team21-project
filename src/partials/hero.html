@@ -1,0 +1,107 @@
+<section class="hero-section">
+  <div class="container">
+    <h1 class="site-title">
+      Ice cream made with <span class="site-title--accent">passion</span>
+    </h1>
+    <ul class="hero-buttons">
+      <li class="hero-buttons__item">
+        <a class="hero-buttons__button-primary" href="#Product">
+          Products
+        </a>
+      </li>
+      <li class="hero-buttons__item">
+        <a
+          class="hero-buttons__button-secondary"
+          href="#Tradition and love"
+        >
+          How it’s made?
+        </a>
+      </li>
+    </ul>
+    <div class="info">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/a-lot-of-ice-creams_l-@1x_225.webp 1x,
+            ./images/hero/a-lot-of-ice-creams_l-@2x_450.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/a-lot-of-ice-creams_m-@1x_152.webp 1x,
+            ./images/hero/a-lot-of-ice-creams_m-@2x_304.webp 2x
+          "
+        />
+        <img
+          class="info__image"
+          src="./images/hero/a-lot-of-ice-creams_m-@1x_152.webp"
+          alt="a lot of ice creams"
+        />
+      </picture>
+      <p class="info__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+        <a class="info__button" href="">
+          <svg class="arrow">
+            <use
+              class="arrow__arrow-def"
+              href="./images/sprite.svg#arrow-def"
+              width="40"
+            ></use>
+            <use
+              class="arrow__arrow-hover"
+              href="./images/sprite.svg#arrow-hover"
+              width="50"
+            ></use>
+          </svg>
+        </a>
+      </p>
+    </div>
+    <img
+      class="hero-ice-cream"
+      srcset="
+        ./images/hero/hero-ice-cream@1x.webp 1x,
+        ./images/hero/hero-ice-cream@2x.webp 2x
+      "
+      src="./images/hero/hero-ice-cream@1x.webp"
+      alt="the funny big ice cream"
+    />
+    <div class="establishments">
+      <p class="establishments__text">
+        <span class="establishments__number">16</span> cafes
+      </p>
+      <p class="establishments__text">
+        <span class="establishments__number">23</span> food trucks
+      </p>
+    </div>
+    <picture class="hero-bubbles">
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/hero-bubbles_desktop@1x_1200.webp 1x,
+          ./images/hero/hero-bubbles_desktop@2x_2400.webp 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/hero-bubbles_tablet@1x_768.webp  1x,
+          ./images/hero/hero-bubbles_tablet@2x_1536.webp 2x
+        "
+      />
+      <source
+        srcset="
+          ./images/hero/hero-bubbles_mobile@1x_320.webp 1x,
+          ./images/hero/hero-bubbles_mobile@2x_640.webp 2x
+        "
+      />
+      <img
+        class="desktop-bubbles"
+        src="./images/hero/hero-bubbles_mobile@1x_320.webp"
+        alt="the little yellow bubbles"
+      />
+    </picture>
+  </div>
+</section>

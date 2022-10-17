@@ -1,5 +1,4 @@
-
-// Ресcет 
+// Ресcет
 h1,
 h2,
 h3,
@@ -20,12 +19,17 @@ address {
   font-style: normal;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 ul,
 ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list {
   list-style: none;
   padding: 0;
   margin: 0;
