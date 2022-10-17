@@ -1,0 +1,40 @@
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: #00000033;
+
+    opacity: 0;
+    visibility: hidden;
+
+    overflow: auto;
+
+    scale: 1.1;
+    transition:  opacity $animation, 
+    scale $animation;
+}
+
+
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    left: 50%;
+    z-index: 10;
+
+    background-color: $bg-white-cl;
+
+    border: 2px solid $bg-yellow-cl;
+    border-radius: 10px;
+
+}
+
+.overlay.active,
+.modal.active{
+    opacity: 1;
+    visibility: visible;
+    scale: 1;
+}

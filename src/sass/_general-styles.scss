@@ -1,6 +1,7 @@
 body {
     background-image: url(../../src/images/bg-body/ice-bg-tel.png);
-    background-size: cover;
+    background-size: contain;
+    background-attachment: fixed;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -30,6 +31,16 @@ body {
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url('../../src/images/bg-body/ice-bg@2x.png');
+        }
+    }
+
+    @media screen and (min-width: 1201px) {
+        background-image: url(../../src/images/bg-body/ice-bg-full.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../../src/images/bg-body/ice-bg-full@2x.png');
         }
     }
 }
