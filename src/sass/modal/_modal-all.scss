@@ -21,7 +21,7 @@
 .modal {
     opacity: 0;
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     left: 50%;
     z-index: 10;
 
