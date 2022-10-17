@@ -3,7 +3,7 @@
 
     <button class="form__btn-close js-modal-close" type="button">
       <svg class="icon-cros" width="20" height="20">
-        <use href="./images/sprite.svg#cross"></use>
+        <use href="./images/sprite.svg#burger-close"></use>
       </svg>
     </button>
 
@@ -13,9 +13,9 @@
 
       <div class="form-chocolate">
       <input class="form-chocolate__input visually-hidden" type="checkbox" name="chocolate-ice" id="chocolate-ice" />
-      <span class="form-chocolate__photo-circle  form__photo-circle--ice-cream "></span>
+      <span class="form-chocolate__photo-circle  form-chocolate__photo-circle--ice-cream "></span>
         
-        <div class="form__photo">
+        <div class="form-chocolate__photo">
           <picture>
             <source 
             srcset="./images/chocolate-ice@1x.webp 1x, ./images/chocolate-ice@2x.webp 2x" 
@@ -32,26 +32,46 @@
 
 
          <div class="energy">
-            <input class="input__ice-cream visually-hidden" type="checkbox" name="ice_cream" id="ice-cream" />
-     <input class="input__ice-cream visually-hidden" type="checkbox" name="chocolate-ice" id="chcolate-ice" />
-      <label class="label__prod label__prod--chocolate-ice" for="chocolate-ice">
-        <span class="span__text">kcal</span></label></input>
+            <!-- <input class="input__ice-cream visually-hidden" type="checkbox" name="ice_cream" id="ice-cream" /> -->
+     <input class="energy__input visually-hidden" type="checkbox" name="chocolate-ice" id="chcolate-ice" />
+       <span class="energy__circle  form-chocolate__photo-circle--ice-cream "></span>
+      <label class="energy__label energy-label--chocolate-ice" for="chocolate-ice">
+      <span class="span__text">kcal</span>
+    </label>
+  </input>
 
-<input class="input__ice-cream visually-hidden" type="checkbox" name="chocolate-ice" id="chcolate-ice" />
- <label class="label__prod label__prod--chocolate-ice" for="chocolate-ice">
+<input class="energy__input visually-hidden" type="checkbox" name="chocolate-ice" id="chcolate-ice" />
+       <span class="energy__circle  form-chocolate__photo-circle--ice-cream "></span>
+      <label class="energy__label energy-label--chocolate-ice" for="chocolate-ice">
         <span class="span__text">Protein...</span></label></input>
 
-        <input class="input__ice-cream visually-hidden" type="checkbox" name="chocolate-ice" id="chcolate-ice" />
- <label class="label__prod label__prod--chocolate-ice" for="chocolate-ice">
+        <input class="energy__input visually-hidden" type="checkbox" name="chocolate-ice" id="chcolate-ice" />
+       <span class="energy__circle  form-chocolate__photo-circle--ice-cream "></span>
+      <label class="energy__label energy-label--chocolate-ice" for="chocolate-ice">
         <span class="span__text">Fats</span></label></input>
 
-        <input class="input__ice-cream visually-hidden" type="checkbox" name="chocolate-ice" id="chcolate-ice"/>
- <label class="label__prod label__prod--chocolate-ice" for="chocolate-ice">
+        <input class="energy__input visually-hidden" type="checkbox" name="chocolate-ice" id="chcolate-ice" />
+       <span class="energy__circle  form-chocolate__photo-circle--ice-cream "></span>
+      <label class="energy__label energy-label--chocolate-ice" for="chocolate-ice">
         <span class="span__text">Carbs</span></label></input>
-      
+      </div> 
 
-        </div> 
+<!-- 
 
+
+       <label class="label__prod label__prod--ice-coffee" for="ice-coffee">
+        <span class="form__photo-circle form__photo-circle--ice-coffee"></span>
+        <div class="form__photo">
+          
+        </div>
+        <span class="label__text">ice coffee</span>
+      </label>
+
+      <input class="input__milkshake visually-hidden" type="checkbox" name="milkshake" id="milkshake" />
+      <label class="label__prod label__prod--milkshake" for="milkshake">
+        <span class="form__photo-circle form__photo-circle--milkshake"></span>
+        <span class="label__text">milkshake</span>
+      </label>   -->
 
 
 
@@ -78,34 +98,6 @@
       id="ice-coffee"
       checked="checked"/> -->
 
-
-       <!-- <label class="label__prod label__prod--ice-coffee" for="ice-coffee">
-        <span class="form__photo-circle form__photo-circle--ice-coffee"></span>
-        <div class="form__photo">
-          <picture>
-             <source srcset="./images/modal/ice-coffee.webp,
-            ./images/modal/ice-coffee@2x.webp" type="image/webp">
-            <source srcset="./images/modal/ice-coffee.jpg,
-            ./images/modal/ice-coffee@2x.jpg" type="image/jpeg" />
-            <img src="./images/modal/ice-coffee.jpg" alt="ice coffee"  width="132" height="132"/> 
-          </picture>
-        </div>
-        <span class="label__text">ice coffee</span>
-      </label>
-      <input class="input__milkshake visually-hidden" type="checkbox" name="milkshake" id="milkshake" />
-      <label class="label__prod label__prod--milkshake" for="milkshake">
-        <span class="form__photo-circle form__photo-circle--milkshake"></span>
-        <div class="form__photo">
-          <picture>
-             <source srcset="./images/modal/milkshake.webp,
-            ./images/modal/milkshake@2x.webp" type="image/webp">
-            <source srcset="./images/modal/milkshake.jpg,
-            ./images/modal/milkshake@2x.jpg" type="image/jpeg" />
-            <img src="./images/modal/milkshake.jpg" alt="milkshake"  width="132" height="132"/> 
-          </picture>
-        </div>
-        <span class="label__text">milkshake</span>
-      </label>  -->
 
 
 

@@ -15,11 +15,11 @@
 //         scale $animation;
 // }
 
-.overlay.active {
-    opacity: 1;
-    visibility: visible;
-    scale: 1;
-}
+// .overlay.active {
+//     opacity: 1;
+//     visibility: visible;
+//     scale: 1;
+// }
 
 .form__bay-now-products {
     position: absolute;
@@ -27,9 +27,10 @@
     top: 0;
     transform: translateX(-50%);
 
-    
+
+    height: 100%;
     width: 280px;
-    height: 990px;
+    // height: 990px;
     margin: 0 auto;
     padding: 28px;
 
@@ -38,11 +39,12 @@
     align-items: center;
     background-color: $bg-white-cl;
 
-    // border: 2px solid $bg-yellow-cl;
-    // border-radius: 10px;
+    border: 2px solid $bg-yellow-cl;
+    border-radius: 10px;
 
     @media screen and (max-width:479px) {
-        width:96%;
+        width: 96%;
+
     }
 
     @media screen and (min-width: 768px) {
@@ -67,6 +69,8 @@
 
     width: 16px;
     height: 16px;
+    // color: #131313;
+    fill: currentColor;
 
 
     padding: 0;
@@ -90,6 +94,7 @@
 
 .icon-cros {
     display: inline-block;
+    color: #131313;
 
     @media screen and (max-width: 767px) {
         width: 16px;
@@ -97,7 +102,6 @@
     }
 }
 
-// btn-close
 
 
 // forma chocolate
@@ -108,12 +112,14 @@
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-@media screen and (max-width:767px) {
-    margin-bottom: 15px;}
 
-@media screen and (min-width:768px) {
-    margin-bottom: 17px;
-}   
+    @media screen and (max-width:767px) {
+        margin-bottom: 15px;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 17px;
+    }
 }
 
 .form-chocolate {
@@ -124,20 +130,71 @@
     align-items: center;
 
     @media screen and (min-width: 768px) {
-        flex-direction: row;
-        gap: 32px;
+        // gap: 32px;
         margin-bottom: 40px;
     }
 }
 
-.label__prod {
-    position: relative;
-    width: 65px;
-    height: 90px;
-    margin-bottom: 86px;
+.form-chocolate__photo {
+    position: absolute;
+    top: 75px;
 
-    text-align: center;
-    border: 2px solid;
+    width: 131px;
+    height: 131px;
+
+    overflow: hidden;
+    border-radius: 50%;
+
+    &-circle {
+        position: relative;
+        top: -10px;
+        margin-bottom: 25px;
+
+        display: block;
+        width: 131px;
+        height: 131px;
+
+        border-radius: 50%;
+
+        @media screen and (min-width:768px) {
+            
+        }
+        &--ice-cream {
+            background: linear-gradient(0deg,
+                    rgba(156, 190, 143, 0.7),
+                    rgba(156, 190, 143, 0.7)), $cl-gray;
+            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+        }
+    }
+}
+
+
+
+
+
+// Forma energy
+.energy__input {
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+    gap: 9px;
+   
+        
+        
+}
+
+.energy__label {
+    position: relative;
+    // width: 65px;
+    // height: 90px;
+    box-sizing: border-box;
+    
+    // position: absolute;
+    width: 53px;
+    height: 72px;
+    text-align: end;
+    border: 2px solid #9CBE8F;
     border-radius: 16px;
 
     transition: background-color $animation,
@@ -151,49 +208,49 @@
         border-color: #96AF8C;
     }
 
-      @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         margin-bottom: 0;
         width: 65px;
         height: 90px;
-        border-radius: 50%;;
+        border-radius: 50%;
+        ;
     }
 }
 
-.form-chocolate__input:focus~.label__prod--chocolate-ice {
+.form-chocolate__input:focus~.energy-label--chocolate-ice {
     outline: 2px solid $btn-cl-green;
 }
 
-.form-chocolate__input:checked~.label__prod--chocolate-ice {
+.form-chocolate__input:checked~.energy-label--chocolate-ice {
     background-color: #96AF8C;
 }
 
-.form-chocolate__photo {
-    position: absolute;
-    top: 75px;
-    
-    width: 131px;
-    height: 131px;
 
+.energy__circle {
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    
     overflow: hidden;
     border-radius: 50%;
-
-    &-circle {
-        position: relative;
-        top: -10px;
-        
-        display: block;
-        width: 131px;
-        height: 131px;
-
-        border-radius: 50%;
-
-        &--ice-cream {
-            background: linear-gradient(0deg,
-                    rgba(156, 190, 143, 0.7),
-                    rgba(156, 190, 143, 0.7)), $cl-gray;
-            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    
+    // &-circle {
+    //     position: relative;
+    //     top: -10px;
+    
+    //     display: block;
+    //     width: 131px;
+    //     height: 131px;
+    
+    //         border-radius: 50%;
+    
+            // &--ice-cream {
+            //     background: linear-gradient(0deg,
+            //             rgba(156, 190, 143, 0.7),
+            //             rgba(156, 190, 143, 0.7)), $cl-gray;
+            //     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+            // }
         }
-    }}
 
 .label__text {
     position: relative;
@@ -203,8 +260,7 @@
 }
 
 
-.energy
-{
+.energy {
     margin-bottom: 50px;
 }
 
@@ -227,15 +283,22 @@
 
 
 .ingredients {
-
+    border: 2px solid tomato;
+@media screen and (min-width:320px) {
+    margin-bottom: 0;
+}
     width: 100%;
+    @media screen and (min-width:768px) {
+        width: 568px;
+        padding: 0 40px;
     margin-bottom: 48px;
+}
 }
 
 .ingredients__list {
-   
+
     padding: 24px 0;
-    }
+}
 
 .ingredients__titile {
     font-style: inherit;
@@ -246,6 +309,7 @@
 .ingredients__item {
     display: flex;
     justify-content: space-between;
+
     &:not(:last-child) {
         margin-bottom: 11px;
     }
@@ -269,7 +333,7 @@
 
 
 
-
+// Contacts
 
 .form__date-in {
     margin-bottom: 12px;
@@ -339,7 +403,7 @@
 .form__bay-btn {
     width: 114px;
     height: 42px;
-
+    margin-bottom: auto;
     background-color: $bg-yellow-cl;
 
     transition: background-color $animation,
