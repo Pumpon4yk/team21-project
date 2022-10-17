@@ -11,6 +11,8 @@
     transform: translateX(114%);
     transition: transform 400ms;
 
+    z-index: 1;
+
     &.is-open {
         transform: translateX(0);
     }

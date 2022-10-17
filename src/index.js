@@ -1,3 +1,7 @@
+import "./js/mobile-menu.js";
+import "./js/header-scroll.js";
+
+
 /*
 |=========================>
 |   Приклад на  CodePen "https://codepen.io/dan_postnov/pen/gjBqPb" як добавляти модалки 

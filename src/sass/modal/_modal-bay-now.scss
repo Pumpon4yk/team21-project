@@ -1,19 +1,4 @@
-.overlay{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: 10;
-    background-color: #00000033;
 
-    opacity: 0;
-    visibility: hidden;
-
-    overflow-y: auto;
-    scale: 1.1;
-    transition:  opacity $animation, 
-    scale $animation;
-}
 
 .overlay.active{
     opacity: 1;
@@ -22,11 +7,6 @@
 }
 
 .form__buy-now{
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-
     width: 280px;
     height: 986px;
     margin: 0 auto;
@@ -35,10 +15,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $bg-white-cl;
 
-    border: 2px solid $bg-yellow-cl;
-    border-radius: 10px;
+    top: 0;
+    transform: translateX(-50%);
 
 
     @media screen and (min-width: 768px) {
@@ -57,7 +36,6 @@
 
     width: 16px;
     height: 16px;
-
 
     padding: 0;
     background-color: transparent;
