@@ -21,7 +21,7 @@
     scale: 1;
 }
 
-.form__bay-now{
+.form__buy-now{
     position: absolute;
     left: 50%;
     top: 0;
@@ -160,7 +160,7 @@
 }
 
 .input__ice-cream:checked ~ .label__prod--ice-cream{
-    background-color: #96AF8C;
+    background-color: $bg-green-prod;
 }
 
 .input__ice-coffee:checked ~ .label__prod--ice-coffee{
@@ -260,8 +260,8 @@
 }
 
 .form__input:not(:placeholder-shown):required:invalid{
-    background-color: #f59c9c;
-    outline-color: #f37777;
+    background-color: $cl-error-bg;
+    outline-color: $cl-error-out;
 }
 
 .form__textarea{
@@ -294,7 +294,7 @@
     margin-bottom: 25px;
 }
 
-.form__bay-btn{
+.form__buy-btn{
     width: 114px;
     height: 42px;
 
