@@ -1,0 +1,90 @@
+<!-- <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/img-gallery/1gallery-desk@1x-min.jpg 1x,
+          ./images/img-gallery/1gallery-desk@2x-min.jpg 2x
+        "
+      />
+
+      
+
+<img
+        class="gallary__img"
+        src="./images/img-gallery/1gallery-tel@1x-min.jpg"
+        alt="icecream"
+      />
+    </picture>
+  </div>
+</section> -->
+
+<section class="gallary">
+  <div class="conteiner conteiner-gallary">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <img
+              class="gallary__img"
+              src="./images/img-gallery/1gallery-desk@1x-min.jpg"
+              alt="icecream"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/img-gallery/1gallery-desk@1x-min.jpg 1x,
+                ./images/img-gallery/1gallery-desk@2x-min.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/img-gallery/1gallery-tab@1x-min.jpg 1x,
+                ./images/img-gallery/1gallery-tab@2x-min.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/img-gallery/1gallery-tel@1x-min.jpg 1x,
+                ./images/img-gallery/1gallery-tel@2x-min.jpg 2x
+              "
+            />
+        </div>
+         <div class="swiper-slide">
+          <img
+            class="gallary__img"
+            src="./images/img-gallery/2gallery-desk@1x.jpg-min.jpg"
+            alt="icecream"
+          />
+          <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./img-gallery/2gallery-desk@1x.jpg-min.jpg 1x,
+                ./img-gallery/2gallery-desk@2x.jpg-min.jpg 2x
+              "
+            />
+         </div>
+
+         <div class="swiper-slide">
+          <img
+            class="gallary__img"
+            src="./images/img-gallery/3gallery-desk@1x.jpg-min.jpg"
+            alt="icecream"
+          />
+          <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./img-gallery/3gallery-desk@1x.jpg-min.jpg 1x,
+                ./img-gallery/3gallery-desk@2x.jpg-min.jpg 2x
+              "
+            />
+        </div>
+        </picture>
+        
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
