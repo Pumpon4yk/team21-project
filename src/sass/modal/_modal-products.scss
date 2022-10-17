@@ -22,15 +22,14 @@
 }
 
 .form__bay-now-products {
-    border: 2px solid tomato;
     position: absolute;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
 
     
-   // width: 280px;
-    // height: 990px;
+    width: 280px;
+    height: 990px;
     margin: 0 auto;
     padding: 28px;
 
@@ -39,8 +38,8 @@
     align-items: center;
     background-color: $bg-white-cl;
 
-    border: 2px solid $bg-yellow-cl;
-    border-radius: 10px;
+    // border: 2px solid $bg-yellow-cl;
+    // border-radius: 10px;
 
     @media screen and (max-width:479px) {
         width:96%;
@@ -54,6 +53,12 @@
         transform: translate(-50%, -50%);
     }
 }
+
+
+
+
+
+// btn-close
 
 .form__btn-close {
     position: absolute;
@@ -92,18 +97,28 @@
     }
 }
 
+// btn-close
+
+
+// forma chocolate
+
 .form__title {
     font-family: $font-second;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-
-    margin-bottom: 84px;
-
     text-align: center;
+@media screen and (max-width:767px) {
+    margin-bottom: 15px;}
+
+@media screen and (min-width:768px) {
+    margin-bottom: 17px;
+}   
 }
 
-.form__prod {
+.form-chocolate {
+    text-align: center;
+    align-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,15 +126,14 @@
     @media screen and (min-width: 768px) {
         flex-direction: row;
         gap: 32px;
-
         margin-bottom: 40px;
     }
 }
 
 .label__prod {
     position: relative;
-    width: 132px;
-    height: 136px;
+    width: 65px;
+    height: 90px;
     margin-bottom: 86px;
 
     text-align: center;
@@ -133,50 +147,27 @@
         outline: 2px solid $btn-cl-green;
     }
 
-    &--ice-cream {
+    &--chocolate-ice {
         border-color: #96AF8C;
     }
 
-    &--ice-coffee {
-        border-color: $bg-yellow-ice-card;
-    }
-
-    &--milkshake {
-        margin-bottom: 25px;
-
-        border-color: $cl-font-brown;
-    }
-
-    @media screen and (min-width: 768px) {
+      @media screen and (min-width: 768px) {
         margin-bottom: 0;
+        width: 65px;
+        height: 90px;
+        border-radius: 50%;;
     }
 }
 
-.input__ice-cream:focus~.label__prod--ice-cream {
+.form-chocolate__input:focus~.label__prod--chocolate-ice {
     outline: 2px solid $btn-cl-green;
 }
 
-.input__ice-coffee:focus~.label__prod--ice-coffee {
-    outline: 2px solid $btn-cl-green;
-}
-
-.input__milkshake:focus~.label__prod--milkshake {
-    outline: 2px solid $btn-cl-green;
-}
-
-.input__ice-cream:checked~.label__prod--ice-cream {
+.form-chocolate__input:checked~.label__prod--chocolate-ice {
     background-color: #96AF8C;
 }
 
-.input__ice-coffee:checked~.label__prod--ice-coffee {
-    background-color: $bg-yellow-ice-card;
-}
-
-.input__milkshake:checked~.label__prod--milkshake {
-    background-color: $cl-font-brown;
-}
-
-.form__photo {
+.form-chocolate__photo {
     position: absolute;
     top: 75px;
     
@@ -188,7 +179,7 @@
 
     &-circle {
         position: relative;
-        top: -56px;
+        top: -10px;
         
         display: block;
         width: 131px;
@@ -204,47 +195,46 @@
         }
     }}
 
-    //     &--ice-coffee {
-    //         background: linear-gradient(0deg,
-    //                 rgba(248, 210, 78, 0.7),
-    //                 rgba(248, 210, 78, 0.7)), $cl-gray;
-    //         box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
-    //     }
-
-    //     &--milkshake {
-    //         background: linear-gradient(0deg,
-    //                 rgba(213, 117, 63, 0.7),
-    //                 rgba(213, 117, 63, 0.7)), $cl-gray;
-    //         box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
-    //     }
-    // }
-
-
 .label__text {
     position: relative;
     top: -40px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
     letter-spacing: $let-spacing-main;
     text-transform: uppercase;
 }
+
 
 .energy
 {
     margin-bottom: 50px;
 }
 
+.span__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .ingredients {
-border: 2px solid tomato;
+
     width: 100%;
     margin-bottom: 48px;
 }
 
 .ingredients__list {
    
-    padding: 24px 40px;
+    padding: 24px 0;
     }
 
 .ingredients__titile {
@@ -260,6 +250,18 @@ border: 2px solid tomato;
         margin-bottom: 11px;
     }
 }
+
+
+.ingredient__weigth {
+    margin-left: auto;
+}
+
+
+
+
+
+
+
 
 
 
