@@ -1,0 +1,118 @@
+<div class="overlay js-overlay-modal" data-modal="2">
+  <form class="form__bay-now-products" autocomplete="on">
+
+    <button class="form__btn-close js-modal-close" type="button">
+      <svg class="icon-cros" width="20" height="20">
+        <use href="./images/sprite.svg#cross"></use>
+      </svg>
+    </button>
+
+    <h1 class="form__title">Chololate icecream</h1>
+
+    
+      <input class="input__ice-cream visually-hidden" type="checkbox" name="ice_cream" id="ice-cream" />
+      <!-- <label class=" label__prod label__prod--ice-cream" for="ice-cream"> -->
+        <span class="form__photo-circle  form__photo-circle--ice-cream "></span>
+        <div class="form__photo">
+          <picture>
+            <source 
+            srcset="./images/chocolate-ice@1x.webp 1x, ./images/chocolate-ice@2x.webp 2x" 
+            type="images/webp">
+
+            <source 
+            srcset="./images/chocolate-ice@1x.jpg 1x, ./images/chocolate-ice@2x.jpg 2x"
+             type="images/jpeg" /> 
+
+             <img src="./images/chocolate-ice@1x.jpg" alt="chocolate-ice"  width="131" height="131"/>
+          </picture>
+        </div> 
+
+        <!-- <div class="energy">
+            <input class="input__ice-cream visually-hidden" type="checkbox" name="ice_cream" id="ice-cream" />
+      <label class=" label__prod label__prod--ice-cream" for="ice-cream">
+        </div> -->
+
+
+        <div class="ingredients">
+            <h2 class="ingredients__titile">Ingredients</h2>
+            <ul class="ingredients__list">
+                <li class="ingredients__item">Milk 100ml</li>
+                <li class="ingredients__item">Belgian chocolate 20g</li>
+                <li class="ingredients__item">Cream 150ml</li>
+                <li class="ingredients__item">Cocoa powder  30g</li>
+                <li class="ingredients__item">Sugar 40g</li>
+                <li class="ingredients__item">Vanilla sugar 10g</li>
+            </ul>
+
+
+        </div>
+
+        <!-- <span class="label__text">ice cream</span>
+      </label>
+      <input class="input__ice-coffee visually-hidden" 
+      type="checkbox" 
+      name="ice_coffee" 
+      id="ice-coffee"
+      checked="checked"/> -->
+
+
+       <!-- <label class="label__prod label__prod--ice-coffee" for="ice-coffee">
+        <span class="form__photo-circle form__photo-circle--ice-coffee"></span>
+        <div class="form__photo">
+          <picture>
+             <source srcset="./images/modal/ice-coffee.webp,
+            ./images/modal/ice-coffee@2x.webp" type="image/webp">
+            <source srcset="./images/modal/ice-coffee.jpg,
+            ./images/modal/ice-coffee@2x.jpg" type="image/jpeg" />
+            <img src="./images/modal/ice-coffee.jpg" alt="ice coffee"  width="132" height="132"/> 
+          </picture>
+        </div>
+        <span class="label__text">ice coffee</span>
+      </label>
+      <input class="input__milkshake visually-hidden" type="checkbox" name="milkshake" id="milkshake" />
+      <label class="label__prod label__prod--milkshake" for="milkshake">
+        <span class="form__photo-circle form__photo-circle--milkshake"></span>
+        <div class="form__photo">
+          <picture>
+             <source srcset="./images/modal/milkshake.webp,
+            ./images/modal/milkshake@2x.webp" type="image/webp">
+            <source srcset="./images/modal/milkshake.jpg,
+            ./images/modal/milkshake@2x.jpg" type="image/jpeg" />
+            <img src="./images/modal/milkshake.jpg" alt="milkshake"  width="132" height="132"/> 
+          </picture>
+        </div>
+        <span class="label__text">milkshake</span>
+      </label>  -->
+
+
+
+
+    <label class="form__date-in" for="">
+      <input class="form__input" 
+      type="text" 
+      placeholder="Name" 
+      pattern="^[a-zA-Z]+$" 
+      autocomplete
+      required />
+    </label>
+
+    <label class="form__date-in" for="">
+      <input class="form__input" 
+      type="tel" 
+      placeholder="Phone" 
+      pattern="^[ 0-9]+$" 
+      autocomplete
+      required/>
+    </label>
+
+    <label class="form__coment" for="">
+      <textarea class="form__textarea" 
+      name="coment" id="" cols="30" rows="10" 
+      placeholder="Comment"></textarea>
+    </label>
+
+    <button class="form__bay-btn" 
+    type="submit">Submit</button>
+
+  </form>
+</div>
