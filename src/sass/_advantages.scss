@@ -1,7 +1,9 @@
-.advantege--container {
+.advantege {
   background-color: $bg-green;
   color: $white-font-cl;
+}
 
+.advantege--container {
   padding-bottom: 36px;
 
   @media screen and (min-width: 768px) {
