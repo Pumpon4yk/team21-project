@@ -9,7 +9,7 @@
     opacity: 0;
     visibility: hidden;
 
-    overflow: auto;
+    overflow: scroll;
 
     scale: 1.1;
     transition:  opacity $animation, 
@@ -21,7 +21,7 @@
 .modal {
     opacity: 0;
     visibility: hidden;
-    position: fixed;
+    position: absolute;
     left: 50%;
     z-index: 10;
 
