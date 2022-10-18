@@ -1,9 +1,11 @@
-.form__buy-now{
+
+.modal__buy-now{
     width: 280px;
     height: 986px;
     padding: 28px;
-  
-  position: absolute;
+
+    z-index: 30;
+    position: absolute;
 
     display: flex;
     flex-direction: column;
@@ -207,6 +209,11 @@
     text-transform: uppercase;
 }
 
+.input-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .form__date-in{
     margin-bottom: 12px;
