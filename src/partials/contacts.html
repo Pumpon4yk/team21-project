@@ -90,6 +90,7 @@
     </ul>
     <ul class="button-thumb">
       <li>
+        <!--LOCATION-->
         <button
           class="button contact-secondary-btn"
           type="button"
@@ -113,43 +114,22 @@
     <div class="modal modal-location">
       <button class="modal__btn-close">
         <svg class="modal__btn-icon" width="18" height="18">
-          <use href="../images/sprite.svg#"></use>
+          <use href="../images/sprite.svg#icon-close"></use>
         </svg>
       </button>
     </div>
   </div>
 </section>
-<!-- OUR LOCATION MODAL-->
-<div class="modal-location">
-  <p class="modal-location__title">Our Locations</p>
-  <button class="modal__btn" data-modal-close>
-    <svg class="modal__icon-close" width="20" height="20">
-      <use href="./images/sprite.svg#icon-close"></use>
-    </svg>
-  </button>
-  <div class="backdrop thumb--is-hidden" data-map>
-    <div class="map">
-      <div class="map__iframe">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14634.251268066106!2d34.561205350906526!3d49.57899123987542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82f650691fe75%3A0xe42f916f29cc2252!2z0L_QsNGA0Log0J_QvtCx0LXQtNCw!5e0!3m2!1sru!2sua!4v1666041879422!5m2!1sru!2sua"
-          width="480"
-          height="260"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <button class="button map__btn">
-          <a
-            class="map__link"
-            href="https://goo.gl/maps/r6cieaA11dWpWiXGA"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Our location"
-          ></a
-          >Open map
-        </button>
-      </div>
-    </div>
+<!--location modal form-->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-btn" data-modal-close>
+      <svg class="btn-close" width="18" height="18">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="map-modal"></div>
+
+    <button class="register-form-btn" type="submit">Відправити</button>
   </div>
 </div>
