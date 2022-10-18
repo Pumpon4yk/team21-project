@@ -1,10 +1,10 @@
-.modal__buy-now {
+.modal__fran {
   width: 280px;
-  height: 986px;
-  padding: 28px;
+  height: 674px;
+  padding: 32px;
 
   z-index: 30;
-  position: absolute;
+  position: fixed;
 
   display: flex;
   flex-direction: column;
@@ -15,8 +15,8 @@
 
   @media screen and (min-width: 768px) {
     width: 568px;
-    height: 644px;
-    padding: 32px 54px;
+    height: 668px;
+    padding: 32px 60px;
 
     top: 50%;
     transform: translate(-50%, -50%);
@@ -59,174 +59,63 @@
   }
 }
 
-.form__title {
+.form__title-fran {
   font-family: $font-second;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0;
 
-  margin-bottom: 84px;
+  margin-bottom: 20px;
 
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 103px;
-    font-size: 20px;
+    letter-spacing: 0;
+
+    margin-bottom: 24px;
+    font-size: 24px;
     line-height: 1.4;
   }
 }
 
-.form__prod {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    gap: 32px;
-
-    margin-bottom: 40px;
-  }
-}
-
-.label__prod {
-  position: relative;
-  width: 132px;
-  height: 136px;
-  margin-bottom: 86px;
-
-  text-align: center;
-  border: 2px solid;
-  border-radius: 16px;
-
-  transition: background-color $animation, outline $animation;
-
-  &:hover {
-    outline: 2px solid $btn-cl-green;
-  }
-
-  &--ice-cream {
-    border-color: #96af8c;
-  }
-
-  &--ice-coffee {
-    border-color: $bg-yellow-ice-card;
-  }
-
-  &--milkshake {
-    margin-bottom: 25px;
-
-    border-color: $cl-font-brown;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
-}
-
-.input__ice-cream:focus ~ .label__prod--ice-cream {
-  outline: 2px solid $btn-cl-green;
-}
-
-.input__ice-coffee:focus ~ .label__prod--ice-coffee {
-  outline: 2px solid $btn-cl-green;
-}
-
-.input__milkshake:focus ~ .label__prod--milkshake {
-  outline: 2px solid $btn-cl-green;
-}
-
-.input__ice-cream:checked ~ .label__prod--ice-cream {
-  background-color: #84a178;
-}
-
-.input__ice-coffee:checked ~ .label__prod--ice-coffee {
-  background-color: $bg-yellow-ice-card;
-}
-
-.input__milkshake:checked ~ .label__prod--milkshake {
-  background-color: $cl-font-brown;
-}
-
-.form__photo {
-  position: absolute;
-  top: -64px;
-  left: -2px;
-  width: 132px;
-  height: 132px;
-
-  overflow: hidden;
-  border-radius: 50%;
-
-  &-circle {
-    position: relative;
-    top: -56px;
-    left: -2px;
-    display: block;
-    width: 132px;
-    height: 132px;
-
-    border-radius: 50%;
-
-    &--ice-cream {
-      background: linear-gradient(
-          0deg,
-          rgba(156, 190, 143, 0.7),
-          rgba(156, 190, 143, 0.7)
-        ),
-        $cl-gray;
-      box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-    }
-
-    &--ice-coffee {
-      background: linear-gradient(
-          0deg,
-          rgba(248, 210, 78, 0.7),
-          rgba(248, 210, 78, 0.7)
-        ),
-        $cl-gray;
-      box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
-    }
-
-    &--milkshake {
-      background: linear-gradient(
-          0deg,
-          rgba(213, 117, 63, 0.7),
-          rgba(213, 117, 63, 0.7)
-        ),
-        $cl-gray;
-      box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
-    }
-  }
-}
-
-.label__text {
-  position: relative;
-  top: -40px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
+.form__text-fran {
+  line-height: 1.2;
   letter-spacing: $let-spacing-main;
-  text-transform: uppercase;
+  margin-bottom: 24px;
+  letter-spacing: 0;
+
+
+  @media screen and (min-width: 768px){
+  font-size: 16px;
+  margin-bottom: 32px;
+  width: 448px;
+
+  }
+
 }
 
-.input-cont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.input-cont-fran {
+  width: 224px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px){
+    width: 368px;
+  }
 }
 
-.form__date-in {
-  margin-bottom: 12px;
-}
-
-.form__input {
+.form__input-fren {
   width: 224px;
   height: 33px;
 
   padding: 8px 12px;
+  margin-bottom: 12px;
 
-  line-height: 1.7;
+  font-style: 12px;
+  line-height: 1.4;
+  letter-spacing: 0;
+
 
   background-color: $bg-yelloe-10;
   border-radius: 10px;
@@ -242,6 +131,9 @@
   @media screen and (min-width: 768px) {
     width: 368px;
     height: 42px;
+    padding: 11px 16px;
+    margin-bottom: 16px;
+
   }
 }
 
@@ -250,15 +142,18 @@
   outline-color: #84a178;
 }
 
-.form__textarea {
+.form__textarea-fran {
   width: 224px;
-  height: 65px;
+  height: 64px;
 
   resize: none;
 
   padding: 8px 12px;
+  margin-bottom: 24px;
 
-  line-height: 1.7;
+  line-height: 1.4;
+  letter-spacing: 0;
+
 
   background: $bg-yelloe-10;
   border-radius: 10px;
@@ -273,16 +168,12 @@
   @media screen and (min-width: 768px) {
     width: 368px;
     height: 84px;
+  margin-bottom: 32px;
+
   }
 }
 
-.form__coment {
-  margin-bottom: 25px;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
-  }
-}
 
 .form__buy-btn {
   width: 114px;
@@ -292,6 +183,7 @@
   font-size: 14px;
   line-height: 1.21;
   padding: 0;
+  margin: 0 auto;
 
   text-align: center;
 

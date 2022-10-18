@@ -62,7 +62,7 @@
       </li>
       <li class="card contact__item">
         <b class="contact__name">CAFE</b>
-        <ul class="card__list list">
+        <ul class="card__list">
           <li class="card__item">
             <p class="card__title">New York</p>
             <p class="card__text">726 Sterling Pl, Brooklyn, NY 11222, USA</p>
@@ -92,20 +92,26 @@
       <li>
         <!--LOCATION-->
         <button
-          class="btn button-thumb__btn-map js-open-modal"
+          class="btn button-thumb__btn--map js-open-modal"
           type="button"
           data-modal="4"
         >
-          Our location<span class="button-thumb__icon">&#8250;</span>
+          Our location
+          <svg class="button-thumb__icon" width="12px" height="12px">
+            <use href="./images/sprite.svg#arrow-btn"></use>
+          </svg>
         </button>
       </li>
       <li>
         <button
-          class="btn button-thumb__btn-map js-open-modal"
+          class="btn button-thumb__btn--fran js-open-modal"
           type="button"
           data-modal="5"
         >
-          Franchise<span class="button-thumb__icon">&#8250;</span>
+        Franchise
+          <svg class="button-thumb__icon" width="12px" height="12px">
+            <use href="./images/sprite.svg#arrow-btn"></use>
+          </svg>
         </button>
       </li>
     </ul>
