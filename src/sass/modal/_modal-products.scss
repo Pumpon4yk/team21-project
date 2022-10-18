@@ -28,7 +28,7 @@
     transform: translateX(-50%);
 
 
-    height: 990px;
+    height: 100%;
     width: 280px;
     // height: 990px;
     margin: 0 auto;
@@ -51,8 +51,8 @@
         width: 568px;
         height: 995px;
 
-        top: 50%;
-        transform: translate(-50%, -50%);
+        // top: 50%;
+        // transform: translate( -50%,  -50%);
     }
 }
 
@@ -94,11 +94,12 @@
 
 .icon-cros {
     display: inline-block;
-    color: #131313;
+        stroke: #131313;
 
-    @media screen and (max-width: 767px) {
+        @media screen and (max-width: 767px) {
         width: 16px;
         height: 16px;
+        stroke: #131313;
     }
 }
 
@@ -128,9 +129,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width:320px) {
+        margin-top: 15px;
+    }
 
     @media screen and (min-width: 768px) {
         // gap: 32px;
+        margin-top: 17px;
         margin-bottom: 40px;
     }
 }
@@ -149,14 +154,25 @@
 }
 
 .form-chocolate__photo {
+
     position: absolute;
-    top: 75px;
+
+    
 
     width: 131px;
     height: 131px;
 
     overflow: hidden;
     border-radius: 50%;
+    @media screen and (min-width:320px) {
+        top: 65px;
+    }
+    @media screen and (min-width:480px) {
+        top: 90px;
+    }
+    @media screen and (min-width:768px) {
+            top: 70px;
+        }
 
     &-circle {
         position: relative;
@@ -169,9 +185,7 @@
 
         border-radius: 50%;
 
-        @media screen and (min-width:768px) {
-            
-        }
+       
         &--ice-cream {
             background: linear-gradient(0deg,
                     rgba(156, 190, 143, 0.7),
@@ -183,9 +197,14 @@
 
 
 
-
-
 // Forma energy
+
+.energy, .lb1, .lb2, .lb3, lb4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
 .energy__input {
     width: 53px;
     height: 72px;
@@ -198,17 +217,19 @@
 }
 
 .energy__label {
-    position: relative;
-    // width: 65px;
-    // height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     box-sizing: border-box;
-    
-    // position: absolute;
     width: 53px;
     height: 72px;
+    left: 145px;
+    top: 268px;
+    box-sizing: border-box;
+   
     text-align: end;
     border: 2px solid #9CBE8F;
-    border-radius: 16px;
+    border-radius: 40px;
 
     transition: background-color $animation,
         outline $animation;
@@ -221,13 +242,13 @@
         border-color: #96AF8C;
     }
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 0;
-        width: 65px;
-        height: 90px;
-        border-radius: 50%;
-        ;
-    }
+    // @media screen and (min-width: 768px) {
+    //     margin-bottom: 0;
+    //     width: 65px;
+    //     height: 90px;
+    //     border-radius: 50%;
+    //     ;
+    // }
 }
 
 // .form-chocolate__input:focus~.energy-label--chocolate-ice {
@@ -243,9 +264,20 @@
     position: absolute;
     width: 43px;
     height: 43px;
+    padding: 11px 12px;
     
     overflow: hidden;
     border-radius: 50%;
+
+    font-weight: 500;
+        font-size: 12px;
+        line-height: 2.3;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+
     
     // &-circle {
     //     position: relative;
@@ -278,9 +310,14 @@
 }
 
 .span__text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
+font-weight: 400;
+    font-size: 8px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+  
+    display: flex;
+    align-items: flex-end;
+    text-align: end;
 }
 
 
