@@ -1,3 +1,15 @@
+.customer-reviews {
+  padding-bottom: 48px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 100px;
+  }
+}
+
 .customer-reviews__card {
   padding: 34px 39px;
   margin-bottom: 30px;
