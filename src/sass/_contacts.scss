@@ -1,0 +1,293 @@
+.container {
+  @media screen and (min-width: 320px) {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.contact {
+  background-image: linear-gradient(
+    to top,
+    $bg-green 82%,
+    rgba(245, 245, 245, 0) 82%
+  );
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 121px;
+  }
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.contact__list {
+  @media screen and (max-width: 767.98px) {
+    display: block;
+  }
+  justify-content: center;
+  gap: 32px;
+  display: flex;
+  margin-bottom: 64px;
+}
+.card {
+  text-align: left;
+  min-width: 280px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px 32px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.86;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+  @media screen and (min-width: 1200px) {
+    min-width: 368px;
+    padding: 40px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 224px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 20px;
+  }
+}
+.contact__name {
+  //   min-width: 73px;
+  //   height: 28px;
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  /* or 30px */
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $black-font-cl;
+  text-transform: uppercase;
+  background-color: $accent-font-cl;
+  border-color: $accent-font-cl;
+  border-radius: 24px;
+  padding: 4px 24px;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+// .card__item {
+//   &:nth-child(1) {
+//     @media screen and (max-width: 767.98px) {
+//       padding-top: 20px;
+//       padding-bottom: 24px;
+//     }
+//   }
+//   width: 179px;
+//   border-bottom: 1px solid #e1e1e1;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+// }
+.card__text {
+  padding-top: 8px;
+  color: #d6936d;
+  line-height: 1.5;
+  font-weight: 500;
+  line-height: 183%;
+  /* or 29px */
+  letter-spacing: 0.04em;
+  text-decoration-line: underline;
+}
+
+// .card__title {
+// }
+.card__time {
+  color: #ababab;
+  text-transform: uppercase;
+}
+.card__item {
+  width: 179px;
+  border-bottom: 1px solid rgba(225, 225, 225, 1);
+  transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  @media screen and (max-width: 767.98px) {
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 159px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 250px;
+    height: 191px;
+  }
+
+  &:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  &:nth-child(1) {
+    padding-top: 32px;
+    @media screen and (max-width: 767.98px) {
+      padding-top: 20px;
+    }
+  }
+}
+.card__link {
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+
+  line-height: 183%;
+  /* or 29px */
+  color: #131313;
+}
+.button-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.button-thumb__btn-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 192px;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $bg-yellow-cl;
+  font-weight: 600;
+  line-height: calc(18 / 14);
+  transition: background-color $animation, color $animation;
+
+  &:hover {
+    background-color: $btn-cl-green;
+  }
+
+  &:focus {
+    background-color: $btn-cl-green;
+    color: $white-font-cl;
+  }
+
+  &:disabled {
+    background-color: $btn-cl-gray;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+// .backdrop {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 10;
+//   background-color: rgba(0, 0, 0, 0.2);
+//   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .backdrop.is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+//   visibility: hidden;
+// }
+// .modal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   width: 528px;
+//   height: 458px;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+//   // padding-left: 60px;
+//   // padding-right: 60px;
+//   background-color: #fcfcfc;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 4px;
+//   outline: #f8d24e;
+
+//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .modal-btn {
+//   stroke-width: 0;
+//   position: absolute;
+//   width: 30px;
+//   height: 30px;
+//   top: 8px;
+//   right: 8px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 0;
+//   margin: 0;
+//   color: #131313;
+//   background-color: inherit;
+//   // border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: 50%;
+//   cursor: pointer;
+// }
+// .modal__title {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 32px;
+//   font-family: inherit;
+//   font-weight: 400;
+//   font-size: 20px;
+//   line-height: 23px;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   color: #131313;
+// }
+// .map__modal {
+//   display: flex;
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 448px;
+//   height: 260px;
+//   margin-bottom: 32px;
+// }
+// .map__iframe {
+//   width: 100%;
+//   height: 100%;
+// }
+// .modal__map-btn {
+//   margin-left: auto;
+//   margin-right: auto;
+//   background-color: #f8d24e;
+//   color: #131313;
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: 14px;
+//   line-height: 17px;
+//   display: flex;
+//   align-items: center;
+//   text-align: center;
+//   transition: background-color, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover {
+//     background-color: #0a8817;
+//   }
+//   &:focus {
+//     background-color: #0a8817;
+//     color: #fcfcfc;
+//   }
+// }
