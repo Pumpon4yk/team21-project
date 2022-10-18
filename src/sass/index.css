@@ -596,6 +596,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 192px;
   gap: 16px;
   margin-left: auto;
   margin-right: auto;
