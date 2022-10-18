@@ -1,6 +1,7 @@
 import "./js/mobile-menu.js";
 import "./js/header-scroll.js";
 import "./js/Swiper";
+import "./js/reviews-slide"
 
 
 
@@ -12,4 +13,3 @@ import "./js/Swiper";
 |=========================>
 */
 import "./js/modal30"
-import "./js/reviews-slide"
