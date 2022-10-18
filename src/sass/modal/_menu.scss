@@ -11,6 +11,8 @@
     transform: translateX(114%);
     transition: transform 400ms;
 
+    z-index: 1;
+
     &.is-open {
         transform: translateX(0);
     }
@@ -34,13 +36,19 @@
     right: 15px;
 }
 .menu-button {
+    width: 32px;
+    height: 32px;
+    padding: 10px 6px;
+    background-color: transparent;
     outline: 0;
         border: 0;
 }
 .menu-close
 { outline: 0;
     border: 0;
-    margin-top: 15px;
+    margin-top: 10px;
+    align-items: center;
+    padding: 6px;
     @media screen and (min-width:768px) {
     margin-right: 30px;
     }
@@ -90,6 +98,7 @@
 
     .icon-menu {
         background-color: #84A178;
+        
       
    }
 

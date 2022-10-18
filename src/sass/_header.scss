@@ -1,31 +1,44 @@
-.container {
-@media screen and (min-width:481px) {
-    max-width:767px;
+// .container {
+// // @media screen and (min-width:481px) {
+// //     max-width:767px;
+// // }
+//     // @media screen and (min-width:1200px) {
+//     //     margin: 0 auto;
+//     //     max-width: 1200px;
+//     // }
+//  width:100%;       
+//     }
+    
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: #84A178;
 }
-    @media screen and (min-width:1200px) {
-        margin: 0 auto;
-        max-width: 1200px;
-    }
-    }
-
 .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #84A178;
     margin: auto;
-@media screen and (max-width:767px) {
-    padding-top: 12px;
-}
+    width: 100%;
 
-    @media screen and (min-width:768px) { 
-        padding-top: 24px;
+    
+    @media screen and (min-width:1200px) {
+        padding-top: 0;
     }
 }
 .logo {
     margin-right: auto;
     outline: 0;
         border: 0;
+        @media screen and (max-width:767px) {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        @media screen and (min-width:768px) {
+            padding-top: 20px;
+                padding-bottom: 20px;
+        }
 }
 
 .header-logo  {
@@ -41,7 +54,7 @@
     @media screen and (min-width:768px) {
         width: 48px;
         height: 44px;
-           }
+                   }
     @media screen and (min-width:1200px) {
         width: 60px;
         height: 65px;
@@ -102,10 +115,11 @@ gap: 27px;
                 color: #0A8817;
             }
         }
-
-    
+           
     @media screen and (min-width:1200px) {
-        
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 40px;
     &:hover {
     color: #F8D24E;
     }
@@ -124,8 +138,8 @@ gap: 27px;
     width: 152px;
     height: 42px;
     text-align: center;
-    display: inline-flex;
-        align-items: center;
+    display: flex;
+        justify-content: center;
         align-items: center;
         margin: 0;
         gap: 11px;
@@ -167,7 +181,7 @@ gap: 27px;
 .header-icon {
  width: 12px;
  height: 12px;
- padding-top: 5px;
+vertical-align: middle;
 }
 
 

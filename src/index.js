@@ -1,3 +1,9 @@
+import "./js/mobile-menu.js";
+import "./js/header-scroll.js";
+import "./js/Swiper";
+
+
+
 /*
 |=========================>
 |   Приклад на  CodePen "https://codepen.io/dan_postnov/pen/gjBqPb" як добавляти модалки 
@@ -6,3 +12,4 @@
 |=========================>
 */
 import "./js/modal30"
+import "./js/reviews-slide"
