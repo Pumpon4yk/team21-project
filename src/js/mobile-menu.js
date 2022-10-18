@@ -2,6 +2,9 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const closeMenuIdA = document.querySelector('.js-close-menu-ida');
+  const closeMenuIdP = document.querySelector('.js-close-menu-idp');
+  const closeMenuIdC = document.querySelector('.js-close-menu-idc');
 
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -14,6 +17,9 @@
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuIdA.addEventListener('click', toggleMenu);
+  closeMenuIdP.addEventListener('click', toggleMenu);
+  closeMenuIdC.addEventListener('click', toggleMenu);
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
