@@ -4,7 +4,7 @@
     height: 100%;
     top: 0;
     z-index: 10;
-    background-color: #00000033;
+    background-color: rgba(0, 0, 0, 0.3);
 
     opacity: 0;
     visibility: hidden;
@@ -23,7 +23,7 @@
     visibility: hidden;
     position: fixed;
     left: 50%;
-    z-index: 10;
+    z-index: 20;
 
     background-color: $bg-white-cl;
 
