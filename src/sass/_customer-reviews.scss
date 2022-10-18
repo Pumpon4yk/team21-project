@@ -43,7 +43,7 @@
   font-size: 20px;
   line-height: calc(37 / 20);
 
-  padding-bottom: 32px;
+  margin-bottom: 34px;
 
   text-align: center;
 
@@ -55,4 +55,15 @@
   margin-right: auto;
   margin-bottom: 32px;
   max-width: 85px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: $bg-green;
+  width: 12px;
+  height: 12px;
 }

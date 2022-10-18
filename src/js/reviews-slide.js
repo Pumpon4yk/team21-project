@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true,
     type: 'bullets',
+    dynamivBullets: true,
   },
   // курсор рука
   grabCursor: true,
@@ -18,7 +19,7 @@ const swiper = new Swiper('.swiper', {
 
   // автопрокрутка
   autoplay: {
-    // пауза
+    //   пауза
     delay: 3000,
   },
   //   скорость
