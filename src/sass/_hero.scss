@@ -1,18 +1,17 @@
 .hero-section {
-  padding-top: 60px;
-  height: 502px;
+  padding-top: 48px;
+  height: 450px;
 
   background-color: $bg-green;
-  overflow: hidden;
 
   @media screen and (min-width: 768px) {
-    padding-top: 40px;
-    height: 350px;
+    padding-top: 20px;
+    height: 330px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 50px;
-    height: 594px;
+    padding-top: 25px;
+    height: 560px;
   }
 }
 
@@ -263,7 +262,7 @@
   }
 
   50% {
-    filter: drop-shadow(0px 0px 35px $bg-white-cl);
+    filter: drop-shadow(0px 0px 20px $bg-white-cl);
   }
 
   100% {
