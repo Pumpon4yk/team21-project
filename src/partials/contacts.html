@@ -1,4 +1,4 @@
-<section class="contact">
+<section class="contact" id="contacts">
   <div class="container">
     <h2 class="contact__title visually-hidden">Contacts</h2>
     <ul class="contact__list list">
@@ -92,25 +92,26 @@
       <li>
         <!--LOCATION-->
         <button
-          class="button contact-secondary-btn"
+          class="btn button-thumb__btn-map js-open-modal"
+          data-modal="4"
           type="button"
-          js-open-modal
         >
           Our location<span class="button-thumb__icon">&#8250;</span>
         </button>
       </li>
-      <!-- <li>
-        <button class="button contact-primary-btn" type="button">
+      <li>
+        <button class="btn button-thumb__btn-map" type="button">
           Franchise<span class="button-thumb__icon">&#8250;</span>
         </button>
-      </li> -->
+      </li>
     </ul>
   </div>
 
   <!--location modal form-->
-  <div class="backdrop is-hidden" js-overlay-modal></div>
-  <div class="modal">
-    <button class="modal-btn" js-modal-close>
+  <!-- <div class="backdrop is-hidden js-overlay-modal"></div>
+  <div class="modal" data-modal="4">
+    <p class="modal__title">Our Locations</p>
+    <button class="modal-btn js-modal-close">
       <svg class="icon icon-icon-close" width="20" height="20">
         <use xlink:href="#icon-icon-close">
           <symbol id="icon-icon-close" viewBox="0 0 32 32">
@@ -121,20 +122,22 @@
         </use>
       </svg>
     </button>
-    <div class="map__iframe">
+    <div class="map__modal">
       <iframe
+        class="map__iframe"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.866156508301!2d30.531895015153633!3d50.42496529708282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d96f5139689b%3A0xa1f7c65300bebad1!2sGoIT!5e0!3m2!1sru!2sua!4v1666111746755!5m2!1sru!2sua"
-        width="600"
-        height="450"
+        width="448"
+        height="260"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-    <button class="modal__map-btn" type="button">Open map</button>
-  </div>
-</section>
-<!-- modal.js -->
+    <button class="modal__map-btn btn" type="button">Open map</button>
+  </div> -->
 
-<script src="./js/modal.js"></script>
+  <!-- modal.js -->
+
+  <!-- <script src="./js/modal.js"></script> -->
+</section>
