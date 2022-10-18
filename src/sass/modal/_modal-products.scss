@@ -1,58 +1,31 @@
-// .overlay {
-//     position: fixed;
-//     width: 100%;
-//     height: 100%;
-//     top: 0;
-//     z-index: 10;
-//     background-color: #00000033;
-
-//     opacity: 0;
-//     visibility: hidden;
-
-//     overflow-y: auto;
-//     scale: 1.1;
-//     transition: opacity $animation,
-//         scale $animation;
-// }
-
-// .overlay.active {
-//     opacity: 1;
-//     visibility: visible;
-//     scale: 1;
-// }
 
 .form__bay-now-products {
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 65%;
     transform: translateX(-50%);
 
-
+    
     height: 990px;
     width: 280px;
-    margin: 0 auto;
+    margin: auto;
     padding: 28px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $bg-white-cl;
 
-    border: 2px solid $bg-yellow-cl;
-    border-radius: 10px;
-
+    
     @media screen and (max-width:479px) {
         width: 96%;
-
     }
 
     @media screen and (min-width: 768px) {
         width: 568px;
         height: 995px;
         margin: 32px auto;
-        
 
-        // top: 50%;
+        top: 50%;
         // transform: translate( -50%,  -50%);
     }
 }
@@ -307,7 +280,12 @@
 
 
 .energy {
-    margin-bottom: 50px;
+    margin-bottom: 38px;
+
+    @media screen and (min-width:768px){
+        margin-bottom: 49px;
+
+    }
 }
 
 .span__text {
@@ -335,15 +313,14 @@ font-weight: 400;
 
 .ingredients {
    
-@media screen and (min-width:320px) {
-    margin-bottom: 24px;
+@media screen and (min-width:319px) {
+    margin-bottom: 48px;
     
 }
     width: 100%;
     @media screen and (min-width:768px) {
         width: 568px;
         padding: 0 40px;
-    margin-bottom: 48px;
 }
 }
 
@@ -355,7 +332,10 @@ font-weight: 400;
 .ingredients__titile {
     font-style: inherit;
     text-align: center;
-
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
 }
 
 .ingredients__item {
@@ -372,23 +352,10 @@ font-weight: 400;
     margin-left: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Contacts
 
-.form__date-in {
-    margin-bottom: 12px;
+.form__date-in-prod {
+    margin-bottom: 16px;
 }
 
 .form__input {

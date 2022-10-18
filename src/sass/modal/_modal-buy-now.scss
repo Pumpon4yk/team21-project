@@ -14,6 +14,9 @@
     top: 0;
     transform: translateX(-50%);
 
+    @media screen and (max-width:479px) {
+        width: 96%;
+    }
 
     @media screen and (min-width: 768px) {
     width: 568px;
@@ -62,7 +65,7 @@
     }
 }
 
-.form__title{
+.form__title-buy{
     font-family: $font-second;
     font-weight: 400;
     font-size: 16px;
@@ -96,7 +99,7 @@
     position: relative;
     width: 132px;
     height: 136px;
-    margin-bottom: 86px;
+    margin-bottom: 84px;
 
     text-align: center;
     border: 2px solid;
@@ -213,13 +216,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media screen and (max-width: 480px) {
+        width: 224px;
+    
+    }
 }
 
 .form__date-in{
     margin-bottom: 12px;
 }
 
-.form__input{
+.form__input-buy{
     width: 224px;
     height: 33px;
 
@@ -245,12 +252,12 @@
     }
 }
 
-.form__input:not(:placeholder-shown):required:invalid{
+.form__input-buy:not(:placeholder-shown):required:invalid{
     background-color: $cl-error-bg;
     outline-color: $cl-error-out;
 }
 
-.form__textarea{
+.form__textarea-buy{
     width: 224px;
     height: 65px;
 
