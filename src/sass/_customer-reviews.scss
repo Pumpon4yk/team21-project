@@ -11,13 +11,20 @@
 }
 
 .customer-reviews__card {
+  height: 256px;
+
   padding: 34px 39px;
   margin-bottom: 30px;
 
   background-color: $bg-green;
   border-radius: 10px;
 
+  @media screen and (min-width: 380px){
+    height: 160px;
+  }
+
   @media screen and (min-width: 768px) {
+    height: 138px;
     padding: 29px 80px;
     margin-bottom: 32px;
   }

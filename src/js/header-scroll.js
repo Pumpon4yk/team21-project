@@ -1,13 +1,16 @@
-window.onscroll = () => changeHeaderBackground();
-
-function changeHeaderBackground() {
-  const header = document.querySelector('[data-header]');
-  const headerOffsetTrigger = header.offsetHeight;
-  const pageOffset = window.pageYOffset;
-
-  if (pageOffset > headerOffsetTrigger) {
-    header.classList.add('no-transparency');
+window.onscroll = function () {
+  if (window.screen.width >= 768) {
+    scrollY <= 70
+      ? document.getElementById('header').classList.remove('header-scroll')
+      : document.getElementById('header').classList.add('header-scroll');
   } else {
-    header.classList.remove('no-transparency');
+    scrollY <= 120
+      ? document.getElementById('header').classList.remove('header-scroll')
+      : document.getElementById('header').classList.add('header-scroll');
   }
-}
+};
+
+// 1. В терміналі прописати команду "npm i jquery"
+// 2. Створити у папці js окремий файл, наприклад, "header-scroll.js" і вставити в нього цей код
+// 3. Підключити його до index.js
+// Після цього фіксований header буде отримувати фон при проскролі сторінки до низу

@@ -14,7 +14,7 @@ body {
     font-size: $font-size-main;
     letter-spacing: $let-spacing-main;
 
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 321px) {
         background-image: url(../../src/images/bg-body/ice-bg-tab.png);
 
         @media (min-device-pixel-ratio: 2),
