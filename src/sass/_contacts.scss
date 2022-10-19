@@ -11,7 +11,6 @@
 }
 
 .contact__list {
- 
   @media screen and (max-width: 767.98px) {
     display: block;
     max-width: 280px;
@@ -22,16 +21,13 @@
   display: flex;
   margin-bottom: 32px;
 
-
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     margin-bottom: 60px;
-
   }
 
-  @media screen and (min-width: 1200px){
-  margin-bottom: 64px;
-  gap: 32px;
-
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 64px;
+    gap: 32px;
   }
 }
 
@@ -40,7 +36,7 @@
   min-width: 280px;
   background: #ffffff;
   border-radius: 24px;
-  padding: 40px 32px;
+  padding: 40px 24px;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.86;
@@ -48,7 +44,6 @@
 
   @media screen and (min-width: 1200px) {
     min-width: 368px;
-    padding: 40px;
     font-size: 16px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -110,7 +105,7 @@
   text-transform: uppercase;
 }
 .card__item {
-  width: 179px;
+  // width: 179px;
   border-bottom: 1px solid rgba(225, 225, 225, 1);
   transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
@@ -161,7 +156,6 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    
   }
 }
 .button-thumb__btn--map {
@@ -175,8 +169,7 @@
   background-color: $bg-yellow-cl;
   font-weight: 600;
   line-height: calc(18 / 14);
-  transition: background-color $animation, 
-  color $animation;
+  transition: background-color $animation, color $animation;
 
   &:hover {
     background-color: $btn-cl-green;
@@ -196,7 +189,7 @@
   }
 }
 
-.button-thumb__btn--fran{
+.button-thumb__btn--fran {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,7 +200,7 @@
   font-weight: 600;
   line-height: calc(18 / 14);
   background-color: transparent;
-  border: 2px solid #F8D24E;
+  border: 2px solid #f8d24e;
 
   transition: border-color $animation;
 
