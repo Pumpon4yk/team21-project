@@ -1,8 +1,33 @@
 
+.overlay-second.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    scale: 1.1;
+}
+
+.overlay-second{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    opacity: 1;
+    visibility: visible;
+
+    overflow: scroll;
+
+    scale: 1;
+    transition:  opacity $animation, 
+    scale $animation;
+}
+
+
 .form__bay-now-products {
     position: absolute;
     left: 50%;
-    top: 65%;
+    top: 15px;
     transform: translateX(-50%);
 
     
@@ -15,24 +40,19 @@
     flex-direction: column;
     align-items: center;
 
-    
-    @media screen and (max-width:479px) {
-        width: 96%;
-    }
+    z-index: 40;
+
+    background-color: $bg-white-cl;
+
+    border: 2px solid $bg-yellow-cl;
+    border-radius: 10px;
 
     @media screen and (min-width: 768px) {
         width: 568px;
         height: 995px;
-        margin: 32px auto;
-
-        top: 50%;
-        // transform: translate( -50%,  -50%);
+        padding: 32px 40px;
     }
 }
-
-
-
-
 
 // btn-close
 
@@ -84,17 +104,10 @@
 .form__title {
     font-family: $font-second;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.4;
     text-align: center;
-
-    @media screen and (max-width:767px) {
-        margin-bottom: 15px;
-    }
-
-    @media screen and (min-width:768px) {
-        margin-bottom: 17px;
-    }
+    margin-bottom: 31px;
 }
 
 .form-chocolate {
@@ -103,55 +116,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (min-width:320px) {
-        margin-top: 15px;
-    }
-
-    @media screen and (min-width: 768px) {
-        // gap: 32px;
-        margin-top: 17px;
-        margin-bottom: 40px;
-    }
-}
-
-.form-chocolate__input {
-    @media screen and (min-width:768px) {
-    margin-bottom:29px;}
-}
-
-.form-chocolate__input:focus~.energy-label--chocolate-ice {
-    outline: 2px solid $btn-cl-green;
-}
-
-.form-chocolate__input:checked~.energy-label--chocolate-ice {
-    background-color: #96AF8C;
 }
 
 .form-chocolate__photo {
-
     position: absolute;
-
-    
+    top: 106px;
 
     width: 131px;
     height: 131px;
 
     overflow: hidden;
     border-radius: 50%;
-    @media screen and (min-width:320px) {
-        top: 65px;
-    }
-    @media screen and (min-width:480px) {
-        top: 90px;
-    }
+
     @media screen and (min-width:768px) {
-            top: 70px;
+            top: 84px;
         }
 
     &-circle {
-        position: relative;
-        top: -10px;
-        margin-bottom: 25px;
+        margin-bottom: 24px;
 
         display: block;
         width: 131px;
@@ -172,161 +154,99 @@
 
 
 // Forma energy
+.energy{
+    margin-bottom: 39px;
 
-.energy, .lb1, .lb2, .lb3, .lb4 {
+    @media screen and (min-width: 768px){
+    margin-bottom: 48px;
+
+    }
+}
+
+
+.energy__list{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
     gap: 10px;
-}
-.energy__input {
-    width: 53px;
-    height: 72px;
-    border: 2px solid #9CBE8F;
-    border-radius: 40px;
-    gap: 9px;
-   
-        
-        
+
+    @media screen and (min-width: 768px) {
+        gap: 20px;
+    }
 }
 
-.energy__label {
+.energy__item{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+
     width: 53px;
     height: 72px;
-    left: 145px;
-    top: 268px;
-    box-sizing: border-box;
-   
-    text-align: end;
-    border: 2px solid #9CBE8F;
+    border: 2px solid $cl-ingr-green;
     border-radius: 40px;
 
-    transition: background-color $animation,
-        outline $animation;
 
-    &:hover {
-        outline: 2px solid $btn-cl-green;
+
+    @media screen and (min-width: 768px) {
+        width: 65px;
+        height: 90px;
     }
-
-    &--chocolate-ice {
-        border-color: #96AF8C;
-    }
-
-    // @media screen and (min-width: 768px) {
-    //     margin-bottom: 0;
-    //     width: 65px;
-    //     height: 90px;
-    //     border-radius: 50%;
-    //     ;
-    // }
 }
 
-// .form-chocolate__input:focus~.energy-label--chocolate-ice {
- 
-//    outline: 2px solid $btn-cl-green;
-// }
+.energy__circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: -2px auto 0;
 
-// .form-chocolate__input:checked~.energy-label--chocolate-ice {
-//     background-color: #96AF8C;
-// }
-
-.energy__circle {
-    position: absolute;
     width: 43px;
     height: 43px;
-    padding: 11px 12px;
-    
-    overflow: hidden;
-    border-radius: 50%;
 
     font-weight: 500;
-        font-size: 12px;
-        line-height: 2.3;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
+    font-size: 10px;
+    line-height: 2.8;
 
+    border-radius: 50%;
+    background-color: $cl-ingr-green;
 
-    
-    // &-circle {
-    //     position: relative;
-    //     top: -10px;
-    
-    //     display: block;
-    //     width: 131px;
-    //     height: 131px;
-    
-    //         border-radius: 50%;
-    
-            // &--ice-cream {
-            //     background: linear-gradient(0deg,
-            //             rgba(156, 190, 143, 0.7),
-            //             rgba(156, 190, 143, 0.7)), $cl-gray;
-            //     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-            // }
-        }
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 
-.label__text {
-    position: relative;
-    top: -40px;
-    letter-spacing: $let-spacing-main;
-    text-transform: uppercase;
-}
-
-
-.energy {
-    margin-bottom: 38px;
-
-    @media screen and (min-width:768px){
-        margin-bottom: 49px;
-
+    @media screen and (min-width: 768px){
+        width: 53px;
+        height: 53px;
     }
 }
 
-.span__text {
-font-weight: 400;
-    font-size: 8px;
+.energy__mass{
+
+    font-weight: 400;
+    font-size: 10px;
     line-height: 1.2;
-    padding-bottom: 10px;
-  
-    display: flex;
-    align-items: flex-end;
-    text-align: end;
+
+    width: 38px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    @media screen and (min-width: 768px){
+        width: 52px;
+        font-size: 12px;
+        line-height: 1.25;
+
+    }
 }
-
-
-
-
-
-
-
-
-
 
 
 
 
 .ingredients {
-   
-@media screen and (min-width:319px) {
     margin-bottom: 48px;
-    
-}
     width: 100%;
     @media screen and (min-width:768px) {
-        width: 568px;
-        padding: 0 40px;
+        width: 488px;
 }
-}
-
-.ingredients__list {
-
-    padding: 24px 0;
 }
 
 .ingredients__titile {
@@ -341,6 +261,10 @@ font-weight: 400;
 .ingredients__item {
     display: flex;
     justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.76;
 
     &:not(:last-child) {
         margin-bottom: 11px;
@@ -416,12 +340,9 @@ font-weight: 400;
 }
 
 .form__coment {
-    @media screen and (min-width:320px) {
-    margin-bottom: 32px;}
+    height: 84px;
 
-    @media screen and (min-width:768px) {
-        margin-bottom: 44px;
-    }
+  margin-bottom: 32px;
 }
 
 .form__bay-btn {

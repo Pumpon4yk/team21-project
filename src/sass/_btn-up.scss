@@ -1,0 +1,55 @@
+.up-button {
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+
+  }
+
+  .up-button__link {
+    position: relative;
+    top: -30px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40%;
+    width: 32px;
+    height: 32px;
+    fill: #7eb101;
+    &:hover,
+    &:focus {
+      scale: 1.2;
+      background-color: #7fb10194;
+      fill: #638230;
+      box-shadow: rgb(77, 125, 64) 2px 0px 15px;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 45px;
+        height: 45px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 60px;
+        height: 60px;
+    }
+  }
+
+  .up-button__icon {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    @media screen and (min-width: 768px){
+        width: 30px;
+        height: 30px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width:40px;
+        height: 40px;
+    }
+  }
