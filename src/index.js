@@ -1,5 +1,5 @@
 import "./js/mobile-menu";
-import "./js/header-scroll";
+// import "./js/header-scroll";
 import "./js/scroll-sl";
 import "./js/Swiper";
 import "./js/reviews-slide";
@@ -15,3 +15,4 @@ import "./js/reviews-slide";
 */
 import "./js/modal30";
 import "./js/modal";
+
