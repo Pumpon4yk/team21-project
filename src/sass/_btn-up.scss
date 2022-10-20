@@ -7,8 +7,8 @@
 
   .up-button__link {
     position: relative;
-    top: -30px;
-    left: 0;
+    top: 30px;
+    left: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,11 +28,19 @@
     @media screen and (min-width: 768px){
         width: 45px;
         height: 45px;
+
+
+        top: 15px;
+        left: 15px;
     }
 
     @media screen and (min-width: 1200px){
         width: 60px;
         height: 60px;
+
+    top: -30px;
+    left: 0;
+
     }
   }
 
