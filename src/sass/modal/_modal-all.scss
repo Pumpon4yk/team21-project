@@ -3,31 +3,55 @@
     width: 100%;
     height: 100%;
     top: 0;
+    left: 0;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.3);
 
     opacity: 0;
     visibility: hidden;
 
-    overflow: scroll;
-
     scale: 1.1;
     transition:  opacity $animation, 
     scale $animation;
 }
 
-
-.modal {
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: scroll;
+    z-index: 15;
     opacity: 0;
     visibility: hidden;
-    position: fixed;
+    scale: 1.1;
+
+    transition: visibility $animation,
+    scale $animation,
+    opacity $animation;
+    
+}
+
+.modal-style {
+    position: absolute;
     left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+
     z-index: 20;
 
     background-color: $bg-white-cl;
 
     border: 2px solid $bg-yellow-cl;
     border-radius: 10px;
+
+    @media screen and (min-width: 768px) {
+        position: fixed;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
 
 }
 

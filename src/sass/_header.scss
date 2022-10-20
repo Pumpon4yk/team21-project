@@ -44,12 +44,10 @@
 .header-logo  {
     fill:#F8D24E;
     
-
-    @media screen and (min-width:320px) {
         width: 40px;
         height: 37px;
         margin-right: auto;
-    }
+
 
     @media screen and (min-width:768px) {
         width: 48px;

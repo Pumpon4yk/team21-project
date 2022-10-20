@@ -1,11 +1,7 @@
 
 .how-its__modal {
- width: 280px;  
- background-color: $bg-white-cl;
+ width: 280px;
 padding: 26px;
-top: 50%;
-transform: translate(-50%, -50%);
-
 
 @media screen and (min-width:768px) {
  width: 568px;   
