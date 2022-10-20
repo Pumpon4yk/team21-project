@@ -2,24 +2,17 @@
   width: 280px;
   height: 674px;
   padding: 32px;
-
-  z-index: 30;
-  position: fixed;
+  
 
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  top: 0;
-  transform: translateX(-50%);
 
   @media screen and (min-width: 768px) {
     width: 568px;
     height: 668px;
     padding: 32px 60px;
 
-    top: 50%;
-    transform: translate(-50%, -50%);
   }
 }
 
