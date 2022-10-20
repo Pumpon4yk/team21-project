@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-custom', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
