@@ -1,315 +1,314 @@
+.modal__buy-now {
+  width: 280px;
+  height: 986px;
+  padding: 28px;
 
-.modal__buy-now{
-    width: 280px;
-    height: 986px;
-    padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  @media screen and (max-width: 479px) {
+    width: 96%;
+  }
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media screen and (max-width:479px) {
-        width: 96%;
-    }
-
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 568px;
     height: 644px;
     padding: 32px 54px;
-    }
+  }
 }
 
-.form__btn-close{
-    position: absolute;
-    right: 8px;
-    top: 8px;
+.form__btn-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
 
+  width: 16px;
+  height: 16px;
+
+  padding: 0;
+  background-color: transparent;
+
+  transition: outline $animation;
+
+  &:hover,
+  &:focus {
+    outline: 2px solid $btn-cl-green;
+  }
+
+  @media screen and (min-width: 768px) {
+    right: 20px;
+    top: 20px;
+
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.icon-cros {
+  display: inline-block;
+
+  @media screen and (max-width: 767px) {
     width: 16px;
     height: 16px;
-
-    padding: 0;
-    background-color: transparent;
-
-    transition: outline $animation;
-
-    &:hover,
-    &:focus{
-        outline: 2px solid $btn-cl-green;
-    }
-
-    @media screen and (min-width: 768px) {
-        right: 20px;
-        top: 20px;
-
-        width: 20px;
-        height: 20px;
-    }
+  }
 }
 
-.icon-cros{
-    display: inline-block;
+.form__title-buy {
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 
-    @media screen and (max-width: 767px){
-        width: 16px;
-        height: 16px;
-    }
-}
+  margin-bottom: 84px;
 
-.form__title-buy{
-    font-family: $font-second;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+  text-align: center;
 
-    margin-bottom: 84px;
-
-    text-align: center;
-
-    @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     margin-bottom: 103px;
     font-size: 20px;
     line-height: 1.4;
-    }
+  }
 }
 
-.form__prod{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.form__prod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    @media screen and (min-width: 768px){
-        flex-direction: row;
-        gap: 32px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 32px;
 
-        margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
+  }
 }
 
-.label__prod{
-    position: relative;
-    width: 132px;
-    height: 136px;
-    margin-bottom: 84px;
+.label__prod {
+  position: relative;
+  width: 132px;
+  height: 136px;
+  margin-bottom: 84px;
 
-    text-align: center;
-    border: 2px solid;
-    border-radius: 16px;
-    
-    transition: background-color $animation,
-    outline $animation;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 16px;
 
-    &:hover {
-        outline: 2px solid $btn-cl-green;
-    }
-    
-    &--ice-cream{
-        border-color:  #96AF8C;
-    }
-    
-    &--ice-coffee{
-        border-color:  $bg-yellow-ice-card;
-    }
-    
-    &--milkshake{
-        margin-bottom: 25px;
-        
-        border-color:  $cl-font-brown;
-    }
+  transition: background-color $animation, outline $animation;
 
-    @media screen and (min-width: 768px){
-        margin-bottom: 0;
-    }
+  &:hover {
+    outline: 2px solid $btn-cl-green;
+  }
+
+  &--ice-cream {
+    border-color: #96af8c;
+  }
+
+  &--ice-coffee {
+    border-color: $bg-yellow-ice-card;
+  }
+
+  &--milkshake {
+    margin-bottom: 25px;
+
+    border-color: $cl-font-brown;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .input__ice-cream:focus ~ .label__prod--ice-cream {
-    outline: 2px solid $btn-cl-green;
+  outline: 2px solid $btn-cl-green;
 }
 
 .input__ice-coffee:focus ~ .label__prod--ice-coffee {
-    outline: 2px solid $btn-cl-green;
+  outline: 2px solid $btn-cl-green;
 }
 
 .input__milkshake:focus ~ .label__prod--milkshake {
-    outline: 2px solid $btn-cl-green;
+  outline: 2px solid $btn-cl-green;
 }
 
-.input__ice-cream:checked ~ .label__prod--ice-cream{
-    background-color: $bg-green-prod;
+.input__ice-cream:checked ~ .label__prod--ice-cream {
+  background-color: $bg-green-prod;
 }
 
-.input__ice-coffee:checked ~ .label__prod--ice-coffee{
-    background-color: $bg-yellow-ice-card;
+.input__ice-coffee:checked ~ .label__prod--ice-coffee {
+  background-color: $bg-yellow-ice-card;
 }
 
-.input__milkshake:checked ~ .label__prod--milkshake{
-    background-color: $cl-font-brown;
+.input__milkshake:checked ~ .label__prod--milkshake {
+  background-color: $cl-font-brown;
 }
 
-.form__photo{
-    position: absolute;
-    top: -64px;
+.form__photo {
+  position: absolute;
+  top: -64px;
+  left: -2px;
+  width: 132px;
+  height: 132px;
+
+  overflow: hidden;
+  border-radius: 50%;
+
+  &-circle {
+    position: relative;
+    top: -56px;
     left: -2px;
+    display: block;
     width: 132px;
     height: 132px;
 
-    overflow: hidden;
     border-radius: 50%;
 
-    &-circle{
-        position: relative;
-        top: -56px;
-        left: -2px;
-        display: block;
-        width: 132px;
-        height: 132px;    
-
-        border-radius: 50%;
-
-        &--ice-cream {
-            background: linear-gradient(0deg, 
-            rgba(156, 190, 143, 0.7), 
-            rgba(156, 190, 143, 0.7)), $cl-gray;
-            box-shadow: 0px 5.26027px 19.726px 
-            rgba(10, 136, 23, 0.25);
-        }
-
-        &--ice-coffee{
-            background: linear-gradient(0deg, 
-            rgba(248, 210, 78, 0.7), 
-            rgba(248, 210, 78, 0.7)), $cl-gray;
-            box-shadow: 0px 5.26027px 19.726px 
-            rgba(153, 114, 23, 0.25);
-        }
-
-        &--milkshake{
-            background: linear-gradient(0deg, 
-            rgba(213, 117, 63, 0.7), 
-            rgba(213, 117, 63, 0.7)), $cl-gray;
-            box-shadow: 0px 5.26027px 19.726px 
-            rgba(0, 0, 0, 0.25); 
-        }
+    &--ice-cream {
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)
+        ),
+        $cl-gray;
+      box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     }
-}
 
-
-.label__text{
-    position: relative;
-    top: -40px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: $let-spacing-main;
-    text-transform: uppercase;
-}
-
-.input-cont{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    @media screen and (max-width: 480px) {
-        width: 224px;
-    
+    &--ice-coffee {
+      background: linear-gradient(
+          0deg,
+          rgba(248, 210, 78, 0.7),
+          rgba(248, 210, 78, 0.7)
+        ),
+        $cl-gray;
+      box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
     }
+
+    &--milkshake {
+      background: linear-gradient(
+          0deg,
+          rgba(213, 117, 63, 0.7),
+          rgba(213, 117, 63, 0.7)
+        ),
+        $cl-gray;
+      box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    }
+  }
 }
 
-.form__date-in{
-    margin-bottom: 12px;
+.label__text {
+  position: relative;
+  top: -40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: $let-spacing-main;
+  text-transform: uppercase;
 }
 
-.form__input-buy{
+.input-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (max-width: 480px) {
     width: 224px;
-    height: 33px;
-
-    padding: 8px 12px;
-
-    line-height: 1.7;
-
-    background-color:$bg-yelloe-10;
-    border-radius: 10px;
-    border: 1px solid $bg-green;
-    outline-color: $btn-cl-green;
-
-    transition: background-color $animation, 
-    outline-color $animation;
-
-    &::placeholder{
-        color: currentColor;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 368px;
-        height: 42px;
-    }
+  }
 }
 
-.form__input-buy:not(:placeholder-shown):required:invalid{
-    background-color: $cl-error-bg;
-    outline-color: $cl-error-out;
+.form__date-in {
+  margin-bottom: 12px;
 }
 
-.form__textarea-buy{
-    width: 224px;
-    height: 65px;
+.form__input-buy {
+  width: 224px;
+  height: 33px;
 
-    resize: none;
+  padding: 8px 12px;
 
-    padding: 8px 12px;
+  line-height: 1.7;
 
-    line-height: 1.7;
+  background-color: $bg-yelloe-10;
+  border-radius: 10px;
+  border: 1px solid $bg-green;
+  outline-color: $btn-cl-green;
 
-    background: $bg-yelloe-10;
-    border-radius: 10px;
-    border: 1px solid $bg-green;
+  transition: background-color $animation, outline-color $animation;
 
-    outline-color: $btn-cl-green;
+  &::placeholder {
+    color: currentColor;
+  }
 
-    &::placeholder{
-        color: currentColor;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 368px;
-        height: 84px;
-    }
-}
-
-.form__coment-buy{
-    margin-bottom: 25px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-    }
-}
-
-.form__buy-btn{
-    width: 114px;
+  @media screen and (min-width: 768px) {
+    width: 368px;
     height: 42px;
+  }
+}
 
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    padding: 0;
+.form__input-buy:not(:placeholder-shown):required:invalid {
+  background-color: $cl-error-bg;
+  outline-color: $cl-error-out;
+}
 
-    text-align: center;
+.form__textarea-buy {
+  width: 224px;
+  height: 65px;
 
-    background-color: $bg-yellow-cl;
+  resize: none;
 
-    transition: background-color $animation, 
-    color $animation, outline $animation;
+  padding: 8px 12px;
 
-    &:hover{
-        background-color: $btn-cl-green;
-        outline: 2px solid $btn-cl-green;
-    }
+  line-height: 1.7;
 
-    &:focus{
-        background-color: $btn-cl-green;
-        color: $white-font-cl;
-        outline: 2px solid $btn-cl-green;
-    }
+  background: $bg-yelloe-10;
+  border-radius: 10px;
+  border: 1px solid $bg-green;
 
-    &:disabled{
-        background-color: $btn-cl-gray;
-    }
+  outline-color: $btn-cl-green;
+
+  &::placeholder {
+    color: currentColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    height: 84px;
+  }
+}
+
+.form__coment-buy {
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+.form__buy-btn {
+  width: 114px;
+  height: 42px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  padding: 0;
+
+  text-align: center;
+
+  background-color: $bg-yellow-cl;
+
+  transition: background-color $animation, color $animation, outline $animation;
+
+  &:hover {
+    background-color: $btn-cl-green;
+    outline: 2px solid $btn-cl-green;
+  }
+
+  &:focus {
+    background-color: $btn-cl-green;
+    color: $white-font-cl;
+    outline: 2px solid $btn-cl-green;
+  }
+
+  &:disabled {
+    background-color: $btn-cl-gray;
+  }
 }

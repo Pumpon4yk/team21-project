@@ -2,7 +2,6 @@
   width: 280px;
   height: 674px;
   padding: 32px;
-  
 
   display: flex;
   flex-direction: column;
@@ -12,7 +11,6 @@
     width: 568px;
     height: 668px;
     padding: 32px 60px;
-
   }
 }
 
@@ -72,28 +70,24 @@
   }
 }
 
-
 .form__text-fran {
   line-height: 1.2;
   letter-spacing: $let-spacing-main;
   margin-bottom: 24px;
   letter-spacing: 0;
 
-
-  @media screen and (min-width: 768px){
-  font-size: 16px;
-  margin-bottom: 32px;
-  width: 448px;
-
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 32px;
+    width: 448px;
   }
-
 }
 
 .input-cont-fran {
   width: 224px;
   margin: 0 auto;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     width: 368px;
   }
 }
@@ -108,7 +102,6 @@
   font-style: 12px;
   line-height: 1.4;
   letter-spacing: 0;
-
 
   background-color: $bg-yelloe-10;
   border-radius: 10px;
@@ -126,7 +119,6 @@
     height: 42px;
     padding: 11px 16px;
     margin-bottom: 16px;
-
   }
 }
 
@@ -147,7 +139,6 @@
   line-height: 1.4;
   letter-spacing: 0;
 
-
   background: $bg-yelloe-10;
   border-radius: 10px;
   border: 1px solid $bg-green;
@@ -161,12 +152,9 @@
   @media screen and (min-width: 768px) {
     width: 368px;
     height: 84px;
-  margin-bottom: 32px;
-
+    margin-bottom: 32px;
   }
 }
-
-
 
 .form__buy-btn {
   width: 114px;

@@ -1,19 +1,28 @@
 .gallary {
-   padding-bottom: 80px;
-   margin-bottom: 0;
-   background-image: 
-   linear-gradient(to bottom,$bg-green 18%,rgba(245, 245, 245, 0) 18%);
-@media screen and (min-width: 768px) {
+  padding-bottom: 80px;
+  margin-bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    $bg-green 18%,
+    rgba(245, 245, 245, 0) 18%
+  );
+  @media screen and (min-width: 768px) {
     padding-bottom: 55px;
 
-background-image:
-    linear-gradient(to bottom, $bg-green 50%, rgba(245, 245, 245, 0) 50%);
-} 
-@media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      to bottom,
+      $bg-green 50%,
+      rgba(245, 245, 245, 0) 50%
+    );
+  }
+  @media screen and (min-width: 1200px) {
     padding-bottom: 128px;
-    background-image:
-    linear-gradient(to bottom, $bg-green 22%, rgba(245, 245, 245, 0) 22%);
-}
+    background-image: linear-gradient(
+      to bottom,
+      $bg-green 22%,
+      rgba(245, 245, 245, 0) 22%
+    );
+  }
 }
 
 // .conteiner-gallary {
@@ -30,35 +39,35 @@ background-image:
 // }
 
 .gallary__img {
-    display: block;
-    object-fit: cover;
-@media screen and (max-width: 767px) {
-            height: 279px;
-            width: 100%;
-    }
-@media screen and (min-width: 768px) {
-        height: 327px;
-        width: 100%;
-    }
-@media screen and (min-width: 1199px) {
-        height: 422px;
-        width: 100%;
-    }   
+  display: block;
+  object-fit: cover;
+  @media screen and (max-width: 767px) {
+    height: 279px;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    height: 327px;
+    width: 100%;
+  }
+  @media screen and (min-width: 1199px) {
+    height: 422px;
+    width: 100%;
+  }
 }
 
 .swiper {
-    border-radius: 24px;
-@media screen and (min-width: 1200px) {
-    }
-@media screen and (min-width: 768px) {
-}
-@media screen and (max-width: 767px) {
-}
+  border-radius: 24px;
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (max-width: 767px) {
+  }
 }
 
 .swiper-button-prev {
--webkit-text-fill-color: $bg-green;
+  -webkit-text-fill-color: $bg-green;
 }
 .swiper-button-next {
--webkit-text-fill-color: $bg-green;
+  -webkit-text-fill-color: $bg-green;
 }

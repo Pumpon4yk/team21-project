@@ -1,380 +1,354 @@
-
-.overlay-second.is-hidden{
-    opacity: 0;
-    visibility: hidden;
-    scale: 1.1;
-    
+.overlay-second.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  scale: 1.1;
 }
 
-.overlay-second{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: 20;
-    background-color: rgba(0, 0, 0, 0.3);
+.overlay-second {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.3);
 
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 
-    overflow: scroll;
+  overflow: scroll;
 
-    scale: 1;
-    transition:  opacity $animation, 
-    scale $animation;
+  scale: 1;
+  transition: opacity $animation, scale $animation;
 }
-
 
 .form__bay-now-products {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+
+  height: 990px;
+  width: 280px;
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 20;
+
+  background-color: $bg-white-cl;
+
+  border: 2px solid $bg-yellow-cl;
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 995px;
+    padding: 32px 40px;
+
     position: absolute;
-    left: 50%;
-    top: 20px;
-    transform: translateX(-50%);
-
-    
-    height: 990px;
-    width: 280px;
-    padding: 28px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    z-index: 20;
-
-    background-color: $bg-white-cl;
-
-    border: 2px solid $bg-yellow-cl;
-    border-radius: 10px;
-
-    @media screen and (min-width: 768px) {
-        width: 568px;
-        height: 995px;
-        padding: 32px 40px;
-
-        position: absolute;
-    top: 50px;
-
-    }
-
-    @media screen and (min-width: 1200px){
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
+    top: 80%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 // btn-close
 
 .form__btn-close {
-    position: absolute;
-    right: 8px;
-    top: 8px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
 
-    width: 16px;
-    height: 16px;
-    // color: #131313;
-    fill: currentColor;
+  width: 16px;
+  height: 16px;
+  // color: #131313;
+  fill: currentColor;
 
+  padding: 0;
+  background-color: transparent;
 
-    padding: 0;
-    background-color: transparent;
+  transition: outline $animation;
 
-    transition: outline $animation;
+  &:hover,
+  &:focus {
+    outline: 2px solid $btn-cl-green;
+  }
 
-    &:hover,
-    &:focus {
-        outline: 2px solid $btn-cl-green;
-    }
+  @media screen and (min-width: 768px) {
+    right: 20px;
+    top: 20px;
 
-    @media screen and (min-width: 768px) {
-        right: 20px;
-        top: 20px;
-
-        width: 20px;
-        height: 20px;
-    }
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .icon-cros {
-    display: inline-block;
-        stroke: #131313;
+  display: inline-block;
+  stroke: #131313;
 
-        @media screen and (max-width: 767px) {
-        width: 16px;
-        height: 16px;
-        stroke: #131313;
-    }
+  @media screen and (max-width: 767px) {
+    width: 16px;
+    height: 16px;
+    stroke: #131313;
+  }
 }
-
-
 
 // forma chocolate
 
 .form__title {
-    font-family: $font-second;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.4;
-    text-align: center;
-    margin-bottom: 31px;
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 31px;
 }
 
 .form-chocolate {
-    text-align: center;
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-chocolate__photo {
-    position: absolute;
-    top: 106px;
+  position: absolute;
+  top: 106px;
 
+  width: 131px;
+  height: 131px;
+
+  overflow: hidden;
+  border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    top: 84px;
+  }
+
+  &-circle {
+    margin-bottom: 24px;
+
+    display: block;
     width: 131px;
     height: 131px;
 
-    overflow: hidden;
     border-radius: 50%;
 
-    @media screen and (min-width:768px) {
-            top: 84px;
-        }
-
-    &-circle {
-        margin-bottom: 24px;
-
-        display: block;
-        width: 131px;
-        height: 131px;
-
-        border-radius: 50%;
-
-       
-        &--ice-cream {
-            background: linear-gradient(0deg,
-                    rgba(156, 190, 143, 0.7),
-                    rgba(156, 190, 143, 0.7)), $cl-gray;
-            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-        }
+    &--ice-cream {
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)
+        ),
+        $cl-gray;
+      box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     }
+  }
 }
-
-
 
 // Forma energy
-.energy{
-    margin-bottom: 39px;
+.energy {
+  margin-bottom: 39px;
 
-    @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     margin-bottom: 48px;
-
-    }
+  }
 }
 
+.energy__list {
+  display: flex;
+  gap: 10px;
 
-.energy__list{
-    display: flex;
-    gap: 10px;
-
-    @media screen and (min-width: 768px) {
-        gap: 20px;
-    }
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
 }
 
-.energy__item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+.energy__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 
+  width: 53px;
+  height: 72px;
+  border: 2px solid $cl-ingr-green;
+  border-radius: 40px;
 
+  @media screen and (min-width: 768px) {
+    width: 65px;
+    height: 90px;
+  }
+}
+
+.energy__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: -2px auto 0;
+
+  width: 43px;
+  height: 43px;
+
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2.8;
+
+  border-radius: 50%;
+  background-color: $cl-ingr-green;
+
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+  @media screen and (min-width: 768px) {
     width: 53px;
-    height: 72px;
-    border: 2px solid $cl-ingr-green;
-    border-radius: 40px;
-
-
-
-    @media screen and (min-width: 768px) {
-        width: 65px;
-        height: 90px;
-    }
+    height: 53px;
+  }
 }
 
-.energy__circle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    margin: -2px auto 0;
+.energy__mass {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
 
-    width: 43px;
-    height: 43px;
+  width: 38px;
 
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 2.8;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 
-    border-radius: 50%;
-    background-color: $cl-ingr-green;
-
-    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-
-    @media screen and (min-width: 768px){
-        width: 53px;
-        height: 53px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 52px;
+    font-size: 12px;
+    line-height: 1.25;
+  }
 }
-
-.energy__mass{
-
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.2;
-
-    width: 38px;
-
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-
-    @media screen and (min-width: 768px){
-        width: 52px;
-        font-size: 12px;
-        line-height: 1.25;
-
-    }
-}
-
-
-
 
 .ingredients {
-    margin-bottom: 48px;
-    width: 100%;
-    @media screen and (min-width:768px) {
-        width: 488px;
-}
+  margin-bottom: 48px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 488px;
+  }
 }
 
 .ingredients__titile {
-    font-style: inherit;
-    text-align: center;
-    margin-bottom: 24px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.4;
+  font-style: inherit;
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
 }
 
 .ingredients__item {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.76;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
 
-    &:not(:last-child) {
-        margin-bottom: 11px;
-    }
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
 }
 
-
 .ingredient__weigth {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 // Contacts
 
 .form__date-in-prod {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .form__input {
-    width: 240px;
+  width: 240px;
+  height: 42px;
+
+  padding: 8px 12px;
+
+  line-height: 1.7;
+
+  background-color: $bg-yelloe-10;
+  border-radius: 10px;
+  border: 1px solid $bg-green;
+  outline-color: $btn-cl-green;
+
+  transition: background-color $animation, outline-color $animation;
+
+  &::placeholder {
+    color: currentColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
     height: 42px;
-
-    padding: 8px 12px;
-
-    line-height: 1.7;
-
-    background-color: $bg-yelloe-10;
-    border-radius: 10px;
-    border: 1px solid $bg-green;
-    outline-color: $btn-cl-green;
-
-    transition: background-color $animation,
-        outline-color $animation;
-
-    &::placeholder {
-        color: currentColor;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 368px;
-        height: 42px;
-    }
+  }
 }
 
 .form__input:not(:placeholder-shown):required:invalid {
-    background-color: #f59c9c;
-    outline-color: #f37777;
+  background-color: #f59c9c;
+  outline-color: #f37777;
 }
 
 .form__textarea {
-    width: 240px;
+  width: 240px;
+  height: 84px;
+
+  resize: none;
+
+  padding: 8px 12px;
+
+  line-height: 1.7;
+
+  background: $bg-yelloe-10;
+  border-radius: 10px;
+  border: 1px solid $bg-green;
+
+  outline-color: $btn-cl-green;
+
+  &::placeholder {
+    color: currentColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
     height: 84px;
-
-    resize: none;
-
-    padding: 8px 12px;
-
-    line-height: 1.7;
-
-    background: $bg-yelloe-10;
-    border-radius: 10px;
-    border: 1px solid $bg-green;
-
-    outline-color: $btn-cl-green;
-
-    &::placeholder {
-        color: currentColor;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 368px;
-        height: 84px;
-    }
+  }
 }
 
 .form__coment {
-    height: 84px;
+  height: 84px;
 
   margin-bottom: 32px;
 }
 
 .form__bay-btn {
-    width: 114px;
-    height: 42px;
-    margin-bottom: auto;
-    background-color: $bg-yellow-cl;
+  width: 114px;
+  height: 42px;
+  margin-bottom: auto;
+  background-color: $bg-yellow-cl;
 
-    transition: background-color $animation,
-        color $animation, outline $animation;
+  transition: background-color $animation, color $animation, outline $animation;
 
-    &:hover {
-        background-color: $btn-cl-green;
-        outline: 2px solid $btn-cl-green;
-    }
+  &:hover {
+    background-color: $btn-cl-green;
+    outline: 2px solid $btn-cl-green;
+  }
 
-    &:focus {
-        background-color: $btn-cl-green;
-        color: $white-font-cl;
-        outline: 2px solid $btn-cl-green;
-    }
+  &:focus {
+    background-color: $btn-cl-green;
+    color: $white-font-cl;
+    outline: 2px solid $btn-cl-green;
+  }
 
-    &:disabled {
-        background-color: $btn-cl-gray;
-    }
+  &:disabled {
+    background-color: $btn-cl-gray;
+  }
 }

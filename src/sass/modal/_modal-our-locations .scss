@@ -1,4 +1,3 @@
-
 .modal__locations {
   max-width: 280px;
   height: 365px;
@@ -8,16 +7,13 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  transition: transform $animation,
-    box-shadow $animation,
-    opacity $animation;
+  transition: transform $animation, box-shadow $animation, opacity $animation;
 
-    @media screen and (min-width: 768px) {
-      max-width: 528px;
-      height: 458px;
-      padding: 32px;
-    }
-
+  @media screen and (min-width: 768px) {
+    max-width: 528px;
+    height: 458px;
+    padding: 32px;
+  }
 }
 .modal-btn {
   stroke-width: 0;
@@ -45,12 +41,10 @@
   line-height: 1.5;
   letter-spacing: 0;
 
-  @media screen and (min-width: 768px){
-  margin-bottom: 32px;
-  font-size: 20px;
-
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 20px;
   }
-
 }
 .map__modal {
   display: flex;
@@ -60,7 +54,7 @@
   width: 224px;
   height: 199px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     margin-bottom: 32px;
     width: 448px;
     height: 260px;
@@ -71,41 +65,41 @@
   width: 224px;
   height: 199px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     width: 448px;
     height: 260px;
   }
 }
 .modal__map-btn {
   display: block;
-    width: 145px;
-    height: 42px;
+  width: 145px;
+  height: 42px;
 
-    font-family: $font-main;
-    border-radius: 10px;
-    padding-top: 12px;
-    color: inherit;
-  
-    text-align: center ;
-    margin: 0 auto;
+  font-family: $font-main;
+  border-radius: 10px;
+  padding-top: 12px;
+  color: inherit;
 
-    font-weight: 600;
-    line-height: 1.21;
-  
-    background-color: $bg-yellow-cl;
-  
-    transition: background-color $animation, color $animation;
-  
-    &:hover {
-      background-color: $btn-cl-green;
-    }
-  
-    &:focus {
-      background-color: $btn-cl-green;
-      color: $white-font-cl;
-    }
-  
-    &:disabled {
-      background-color: $btn-cl-gray;
-    }
+  text-align: center;
+  margin: 0 auto;
+
+  font-weight: 600;
+  line-height: 1.21;
+
+  background-color: $bg-yellow-cl;
+
+  transition: background-color $animation, color $animation;
+
+  &:hover {
+    background-color: $btn-cl-green;
   }
+
+  &:focus {
+    background-color: $btn-cl-green;
+    color: $white-font-cl;
+  }
+
+  &:disabled {
+    background-color: $btn-cl-gray;
+  }
+}
